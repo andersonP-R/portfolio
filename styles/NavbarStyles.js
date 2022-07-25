@@ -20,26 +20,17 @@ export const Wrapper = styled.div`
   padding: 0px 20px;
 `;
 
-export const Logo = styled.a`
-  display: flex;
-  justify-content: center;
-  margin-left: 1rem;
-  display: flex;
-  align-items: center;
-  font-size: 2.5rem;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: white;
-  z-index: 999;
-  transition: 300ms ease;
+export const Logo = styled.div`
+  position: relative;
+  width: 100px;
+  /* height: 80px; */
+  /* z-index: 999; */
+  margin-left: 10px;
+  a {
+    width: 100%;
+    height: 80px;
 
-  &:hover {
-    text-shadow: 0px 2px 4px #6497d4;
-  }
-
-  @media screen and (max-width: 960px) {
-    font-size: 2.1rem;
-    padding: 0px;
+    position: absolute;
   }
 `;
 

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 import {
@@ -24,9 +25,14 @@ export const Navbar = () => {
   return (
     <Container bgNav={bgNav}>
       <Wrapper>
-        <Link href="/">
-          <Logo>La Rivera</Logo>
-        </Link>
+        <Logo>
+          <Link href="/">
+            <a>
+              <Image src="/logo5.png" layout="fill" />
+            </a>
+          </Link>
+        </Logo>
+
         <MobileIcon
           onClick={() => setShowMobileMenu(!showMobileMenu)}
           open={showMobileMenu}

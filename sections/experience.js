@@ -1,9 +1,16 @@
-import React from "react";
+import { Container, Wrapper } from "../styles/experienceStyles";
 
 export const Experience = () => {
   return (
-    <div id="experience">
-      <h1>experience</h1>
-    </div>
+    <Container id="experience">
+      <Wrapper>
+        <h1>Here a few of my works</h1>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </Wrapper>
+    </Container>
   );
 };
