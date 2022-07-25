@@ -1,11 +1,14 @@
 body {
   scroll-behavior: smooth;
+  background-color: #f8f8f8;
+  /* color negro #100f07 */
 }
 
 * {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
+  font-family:monospace;
 }
 
 

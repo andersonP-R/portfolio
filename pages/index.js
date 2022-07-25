@@ -1,5 +1,10 @@
 import Head from "next/head";
-import { Container } from "../styles/ContainerElement";
+import { Navbar } from "../components/Navbar";
+import { About } from "../sections/about";
+import { Contact } from "../sections/contacto";
+import { Experience } from "../sections/experience";
+import { Hero } from "../sections/hero";
+import { Skills } from "../sections/skills";
 
 export default function Home() {
   return (
@@ -10,9 +15,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Container>
-        <h1>Hola</h1>
-      </Container>
+      <Navbar />
+      <Hero />
+      <About />
+      <Experience />
+      <Skills />
+      <Contact />
     </div>
   );
 }

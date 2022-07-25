@@ -1,0 +1,6 @@
+container border colors vars
+- backgrounds: #1d1e22
+- wrapper color: #eeeef8
+- descrip color: #565668
+- lets start: #0062ae
+- img container: #9ea8ab
