@@ -74,7 +74,7 @@ export const MenuItemLink = styled.a`
   height: 100%;
   padding: 0.5rem 2.5rem;
   color: white;
-  font-size: 1.4rem;
+  font-size: 16px;
   font-weight: lighter;
   cursor: pointer;
   transition: 0.5s all ease;

@@ -5,7 +5,8 @@ export const Container = styled.div`
   height: 100vh;
   min-height: 600px;
   background-color: #1d1e22;
-  box-shadow: 0px 8px 8px gray;
+  padding: 10px;
+  /* box-shadow: 0px 8px 8px gray; */
 `;
 
 export const Wrapper = styled.div`
@@ -14,7 +15,7 @@ export const Wrapper = styled.div`
   margin: 0px auto;
   border-top: 1px solid #eeeef8;
   border-left: 2px solid #eeeef8;
-  border-right: 2px solid #eeeef8;
+  border-right: 2px solid #eeeef84d;
   display: flex;
   align-items: center;
   padding-top: 50px;
@@ -73,10 +74,18 @@ export const Description = styled.div`
 
 export const ImgContainer = styled.div`
   position: absolute;
-  right: 35px;
+  right: 160px;
   width: 680px;
   height: 450px;
   object-fit: cover;
   border: 4px solid #9ea8ab;
   opacity: 0.5;
+
+  @media screen and (max-width: 1550px) {
+    right: 100px;
+  }
+
+  @media screen and (max-width: 1400px) {
+    right: 35px;
+  }
 `;

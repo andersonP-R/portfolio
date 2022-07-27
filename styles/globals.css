@@ -1,7 +1,12 @@
+html{
+  scrollbar-width: thin;
+  scrollbar-color:  #9ea8ab #1d1e22;
+  scroll-behavior: smooth;
+}
+
 body {
-  
   background-color: #f8f8f8;
-  /* color negro #100f07 */
+  
 }
 
 * {
@@ -9,7 +14,6 @@ body {
   padding: 0px;
   margin: 0px;
   font-family:monospace;
-  scroll-behavior: smooth;
 }
 
 

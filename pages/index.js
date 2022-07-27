@@ -1,7 +1,8 @@
 import Head from "next/head";
+import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
 import { About } from "../sections/about";
-import { Contact } from "../sections/contacto";
+import { Contact } from "../sections/contact";
 import { Experience } from "../sections/experience";
 import { Hero } from "../sections/hero";
 import { Skills } from "../sections/skills";
@@ -21,6 +22,7 @@ export default function Home() {
       <Experience />
       <Skills />
       <Contact />
+      <Footer />
     </div>
   );
 }

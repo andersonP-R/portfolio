@@ -21,7 +21,7 @@ export const Hero = () => {
           <a href="#about">Lets start</a>
         </Description>
         <ImgContainer>
-          <Image src="/image-removebg.png" layout="fill" />
+          <Image src="/images/image-removebg.png" layout="fill" />
         </ImgContainer>
       </Wrapper>
     </Container>

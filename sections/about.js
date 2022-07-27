@@ -13,11 +13,11 @@ export const About = () => {
     <Container id="about">
       <Wrapper>
         <FaceCont>
-          <Image src="/face-siluet.png" layout="fill" />
+          <Image src="/images/face-siluet.png" layout="fill" />
         </FaceCont>
 
         <ImgContainer>
-          <Image src="/hand3.png" layout="fill" />
+          <Image src="/images/hand3.png" layout="fill" />
         </ImgContainer>
         <Description>
           <h1>About Me</h1>
@@ -31,7 +31,7 @@ export const About = () => {
           </p>
         </Description>
         <TableCont>
-          <Image src="/table.png" layout="fill" />
+          <Image src="/images/table.png" layout="fill" />
         </TableCont>
       </Wrapper>
     </Container>

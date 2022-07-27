@@ -32,7 +32,15 @@ export const FaceCont = styled.div`
   width: 45%;
   height: 580px;
   left: -250px;
-  top: 600px;
+  top: 720px;
+
+  @media screen and (max-width: 1550px) {
+    top: 620px;
+  }
+
+  @media screen and (max-width: 1400px) {
+    top: 550px;
+  }
 `;
 
 export const TableCont = styled.div`
