@@ -3,8 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   height: 80px;
-  background-color: ${({ bgNav }) => (bgNav ? "red" : "transparent")};
-  box-shadow: ${({ bgNav }) => (bgNav ? "0px 2px 1px gray" : "transparent")};
+  background-color: #1d1e2299;
   position: fixed;
   z-index: 999;
   transition: 0.3s ease;
@@ -73,7 +72,7 @@ export const MenuItemLink = styled.a`
   align-items: center;
   height: 100%;
   padding: 0.5rem 2.5rem;
-  color: white;
+  color: #eeeef8;
   font-size: 16px;
   font-weight: lighter;
   cursor: pointer;

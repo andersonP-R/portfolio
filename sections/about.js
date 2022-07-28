@@ -13,7 +13,7 @@ export const About = () => {
     <Container id="about">
       <Wrapper>
         <FaceCont>
-          <Image src="/images/face-siluet.png" layout="fill" />
+          <Image src="/images/face4.png" layout="fill" />
         </FaceCont>
 
         <ImgContainer>

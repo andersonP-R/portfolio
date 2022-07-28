@@ -5,7 +5,7 @@ export const Skills = () => {
   return (
     <SkillsContainer id="skills">
       <SkillsWrapper>
-        <h1>Skills</h1>
+        <h1>Skillset</h1>
       </SkillsWrapper>
     </SkillsContainer>
   );

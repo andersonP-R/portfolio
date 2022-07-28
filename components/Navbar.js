@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import {
   Container,
@@ -18,9 +18,11 @@ export const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [bgNav, setBgNav] = useState(false);
 
-  // window.addEventListener("scroll", () => {
-  //   window.pageYOffset > 50 ? setBgNav(true) : setBgNav(false);
-  // }); revizar esto. Probar con getStatic props
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     window.pageYOffset > 600 ? setBgNav(true) : setBgNav(false);
+  //   });
+  // }, []);
 
   return (
     <Container bgNav={bgNav}>

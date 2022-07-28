@@ -4,18 +4,17 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   min-height: 600px;
-  background-color: #eeeef8;
+  /* padding-bottom: 10px; */
+  background-color: #1d1e22;
 `;
 
 export const Wrapper = styled.div`
   max-width: 1200px;
   height: 100%;
   margin: 0px auto;
-  border-left: 2px solid #1d1e22;
-  border-right: 2px solid #1d1e22;
-  border-bottom: 2px solid #1d1e22;
+  border-right: 2px solid #eeeef84d;
+  border-bottom: 2px dashed #eeeef8;
   padding-top: 140px;
-  overflow: hidden;
 
   display: flex;
   align-items: center;
@@ -59,10 +58,12 @@ export const Description = styled.div`
   margin-bottom: 100px;
 
   h1 {
+    color: #eeeef8cc;
     font-size: 80px;
   }
 
   .p-1 {
+    color: #9ea8ab;
     width: 100%;
     font-size: 30px;
   }

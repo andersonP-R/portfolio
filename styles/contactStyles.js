@@ -15,6 +15,14 @@ export const ContactWrapper = styled.div`
   display: flex;
   justify-content: center;
 
+  .buzon-container {
+    position: absolute;
+    width: 800px;
+    height: 450px;
+    left: 80px;
+    margin-top: 80px;
+  }
+
   .form-container {
     display: flex;
     flex-direction: column;
@@ -22,6 +30,7 @@ export const ContactWrapper = styled.div`
     justify-content: center;
     gap: 10px;
     width: 40%;
+    margin-top: 40px;
 
     .contact-title {
       font-size: 50px;
@@ -42,19 +51,44 @@ export const ContactWrapper = styled.div`
 
       input {
         height: 45px;
+        background-color: #1d1e22f2;
+        outline: none;
+        color: #eeeef8;
+        padding: 10px;
+        z-index: 10;
+        font-size: 15px;
 
         &:last-child {
+          cursor: pointer;
           width: 80px;
           margin: 0px auto;
+          transition: 0.2s ease;
         }
+
+        &:last-child:hover {
+          background-color: #9ea8ab1a;
+        }
+      }
+
+      textarea {
+        min-width: 240px;
+        max-width: 240px;
+        min-height: 80px;
+        max-height: 200px;
+        background-color: #1d1e22e6;
+        outline: none;
+        color: white;
+        padding: 10px;
+        z-index: 10;
       }
     }
   }
 
   .plane-container {
-    position: relative;
-    width: 350px;
-    height: 350px;
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    right: 40px;
     margin-top: 150px;
   }
 `;

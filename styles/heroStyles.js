@@ -5,8 +5,7 @@ export const Container = styled.div`
   height: 100vh;
   min-height: 600px;
   background-color: #1d1e22;
-  padding: 10px;
-  /* box-shadow: 0px 8px 8px gray; */
+  padding-top: 10px;
 `;
 
 export const Wrapper = styled.div`
@@ -14,7 +13,7 @@ export const Wrapper = styled.div`
   height: 100%;
   margin: 0px auto;
   border-top: 1px solid #eeeef8;
-  border-left: 2px solid #eeeef8;
+  border-left: 2px solid #eeeef8bf;
   border-right: 2px solid #eeeef84d;
   display: flex;
   align-items: center;
@@ -50,7 +49,6 @@ export const Description = styled.div`
     width: 420px;
     font-size: 20px;
     margin-bottom: 50px;
-    /* background-color: red; */
   }
 
   a {

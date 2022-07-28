@@ -3,13 +3,15 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
-  background-color: #eeeef8;
+  background-color: #1d1e22;
 `;
 
 export const Wrapper = styled.div`
   max-width: 1200px;
   height: 100%;
   margin: 0px auto;
+  border-left: 1px solid #eeeef8;
+  padding-top: 140px;
 
   display: flex;
   flex-direction: column;
@@ -17,6 +19,7 @@ export const Wrapper = styled.div`
   justify-content: center;
 
   h1 {
+    color: #9ea8ab;
     font-size: 40px;
   }
 `;
@@ -28,9 +31,8 @@ export const WorksCont = styled.div`
   margin: 10px;
 
   .work-card {
-    /* flex: 1; */
     height: auto;
-    margin: 15px;
+    margin: 30px;
 
     .work-card__img-container {
       position: relative;
@@ -51,7 +53,7 @@ export const WorksCont = styled.div`
 
       .work-card__descrip {
         font-size: 16px;
-        color: #000000;
+        color: #9ea8ab;
       }
 
       .work-card__url {
