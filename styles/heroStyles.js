@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const HeroContainer = styled.div`
   width: 100%;
   height: 100vh;
   min-height: 600px;
@@ -8,7 +8,7 @@ export const Container = styled.div`
   padding-top: 10px;
 `;
 
-export const Wrapper = styled.div`
+export const HeroWrapper = styled.div`
   max-width: 1200px;
   height: 100%;
   margin: 0px auto;

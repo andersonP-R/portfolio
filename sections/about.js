@@ -1,6 +1,6 @@
 import Image from "next/image";
 import {
-  Container,
+  AboutContainer,
   Description,
   FaceCont,
   ImgContainer,
@@ -10,17 +10,20 @@ import {
 
 export const About = () => {
   return (
-    <Container id="about">
+    <AboutContainer id="about">
       <Wrapper>
-        <FaceCont>
+        {/* <FaceCont>
           <Image src="/images/face4.png" layout="fill" />
-        </FaceCont>
-
+        </FaceCont> */}
         <ImgContainer>
-          <Image src="/images/hand3.png" layout="fill" />
+          <Image src="/images/person-sillh.png" layout="fill" />
         </ImgContainer>
         <Description>
-          <h1>About Me</h1>
+          <div className="title-container">
+            <div className="t-1">About</div>
+            <div className="t-2">Me</div>
+          </div>
+
           <p className="p-1">
             Hello! My name is Anderson and I build things for the web. Usually
             work whit HTML, CSS, JavaScript and React.
@@ -31,9 +34,9 @@ export const About = () => {
           </p>
         </Description>
         <TableCont>
-          <Image src="/images/table.png" layout="fill" />
+          <Image src="/images/board-2.png" layout="fill" />
         </TableCont>
       </Wrapper>
-    </Container>
+    </AboutContainer>
   );
 };

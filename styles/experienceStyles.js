@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   background-color: #1d1e22;
 `;
 
@@ -11,16 +12,57 @@ export const Wrapper = styled.div`
   height: 100%;
   margin: 0px auto;
   border-left: 1px solid #eeeef8;
-  padding-top: 140px;
+  padding-top: 100px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  h1 {
-    color: #9ea8ab;
-    font-size: 40px;
+  .title-container {
+    display: flex;
+    height: 90px;
+
+    .t-1 {
+      display: flex;
+      align-items: center;
+      height: 120px;
+      text-transform: uppercase;
+      color: #9ea8ab;
+      font-size: 140px;
+      font-weight: bolder;
+      border: 1px solid red;
+    }
+
+    .t-2 {
+      display: flex;
+      flex-direction: column;
+      text-transform: uppercase;
+      color: #9ea8ab;
+      font-size: 48px;
+      font-weight: bolder;
+      padding: 8px 5px;
+    }
+
+    .t-3 {
+      text-transform: uppercase;
+      color: #9ea8ab;
+      font-size: 200px;
+      font-weight: bolder;
+      line-height: 200px;
+      text-shadow: 2px 2px 0px red;
+    }
+
+    /* .t-4 {
+      height: 120px;
+      text-transform: uppercase;
+      color: #9ea8ab;
+      font-size: 200px;
+      font-weight: bolder;
+      line-height: 200px;
+
+      border: 1px solid red;
+    } */
   }
 `;
 

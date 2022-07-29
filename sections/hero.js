@@ -1,15 +1,15 @@
 import {
-  Container,
+  HeroContainer,
   Description,
   ImgContainer,
-  Wrapper,
+  HeroWrapper,
 } from "../styles/heroStyles";
 import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <Container>
-      <Wrapper>
+    <HeroContainer>
+      <HeroWrapper>
         <Description>
           <h1>Hi, my name is</h1>
           <h2>Anderson Rivera.</h2>
@@ -23,7 +23,7 @@ export const Hero = () => {
         <ImgContainer>
           <Image src="/images/image-removebg.png" layout="fill" />
         </ImgContainer>
-      </Wrapper>
-    </Container>
+      </HeroWrapper>
+    </HeroContainer>
   );
 };

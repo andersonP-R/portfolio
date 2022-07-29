@@ -32,7 +32,15 @@ export const Experience = () => {
   return (
     <Container id="experience">
       <Wrapper>
-        <h1>Here a few of my works</h1>
+        <div className="title-container">
+          <div className="t-1">some</div>
+          <div className="t-2">
+            of
+            <br />
+            my
+          </div>
+          <div className="t-3"> projects</div>
+        </div>
         <WorksCont>
           {works.map((work) => (
             <div key={work.id} className="work-card">
