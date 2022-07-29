@@ -12,9 +12,6 @@ export const About = () => {
   return (
     <AboutContainer id="about">
       <Wrapper>
-        {/* <FaceCont>
-          <Image src="/images/face4.png" layout="fill" />
-        </FaceCont> */}
         <ImgContainer>
           <Image src="/images/person-sillh.png" layout="fill" />
         </ImgContainer>

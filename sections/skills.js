@@ -9,38 +9,39 @@ import Image from "next/image";
 const skills = [
   {
     id: 1,
-    picture: "dolly.jpg",
+    picture: "html5.png",
     title: "HTML",
+    alt: "html5",
   },
   {
     id: 2,
-    picture: "dolly.jpg",
+    picture: "css-logo.png",
     title: "CSS",
+    alt: "css3",
   },
   {
     id: 3,
-    picture: "dolly.jpg",
+    picture: "js.png",
     title: "JavaScript",
+    alt: "javascript",
   },
   {
     id: 4,
-    picture: "dolly.jpg",
+    picture: "react.png",
     title: "React JS",
+    alt: "react js",
   },
   {
     id: 5,
-    picture: "dolly.jpg",
+    picture: "git.png",
     title: "GIT",
+    alt: "git",
   },
   {
     id: 6,
-    picture: "dolly.jpg",
+    picture: "bootstrap2.jpg",
     title: "Bootstrap",
-  },
-  {
-    id: 7,
-    picture: "dolly.jpg",
-    title: "Bootstrap",
+    alt: "bootstrap",
   },
 ];
 
@@ -53,11 +54,13 @@ export const Skills = () => {
           {skills.map((skill) => (
             <div key={skill.id} className="skill-card">
               <div className="skill-card__img-container">
-                <Image src={`/images/${skill.picture}`} layout="fill" />
+                <Image
+                  src={`/images/${skill.picture}`}
+                  layout="fill"
+                  alt={skill.alt}
+                />
               </div>
-              <div className="skill-card__skill-info">
-                <h2 className="skill-card__title">{skill.title}</h2>
-              </div>
+              <h2 className="skill-card__title">{skill.title}</h2>
             </div>
           ))}
         </SkillBox>

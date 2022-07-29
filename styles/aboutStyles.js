@@ -12,7 +12,6 @@ export const Wrapper = styled.div`
   height: 100%;
   margin: 0px auto;
   border-right: 2px solid #eeeef84d;
-  border-bottom: 2px dashed #eeeef8;
 
   display: flex;
   align-items: center;

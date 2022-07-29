@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <HeroContainer>
+    <HeroContainer id="hero">
       <HeroWrapper>
         <Description>
           <h1>Hi, my name is</h1>

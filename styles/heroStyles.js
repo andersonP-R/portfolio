@@ -27,7 +27,7 @@ export const Description = styled.div`
   position: relative;
   padding: 15px 50px;
   left: -30px;
-  /* z-index: 999; */
+  /* z-index: 10; */
 
   h1 {
     font-size: 20px;
@@ -78,6 +78,11 @@ export const ImgContainer = styled.div`
   object-fit: cover;
   border: 4px solid #9ea8ab;
   opacity: 0.5;
+  transition: 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
 
   @media screen and (max-width: 1550px) {
     right: 100px;

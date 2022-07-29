@@ -74,14 +74,13 @@ export const MenuItemLink = styled.a`
   padding: 0.5rem 2.5rem;
   color: #eeeef8;
   font-size: 16px;
-  font-weight: lighter;
-  cursor: pointer;
-  transition: 0.5s all ease;
   text-decoration: none;
+  transition: 0.6s all ease;
+  border-bottom: 1px solid transparent;
 
   &:hover {
-    color: #07cfff;
-    transition: 0.5s all ease;
+    border-color: red;
+    transition: 0.2s all ease;
   }
 
   div {
