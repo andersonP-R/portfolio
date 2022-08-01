@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Image from "next/image";
+
 import {
   FaGithub,
   FaLinkedinIn,
@@ -22,12 +22,7 @@ export const Footer = () => {
             <FaInstagram />
           </a>
         </div>
-        <h2>
-          Designed and build by Anderson Rivera
-          <div>
-            <Image src="/images/logo-variant-gray3.png" layout="fill" />{" "}
-          </div>
-        </h2>
+        <h2>Designed and build by Anderson Rivera</h2>
         <a href="#hero" className="toTop">
           <FaChevronUp />
         </a>
@@ -38,6 +33,7 @@ export const Footer = () => {
 
 const FooterContainer = styled.footer`
   width: 100%;
+  min-height: 15vh;
   height: 15vh;
   padding: 10px;
   background-color: #1d1e22;
@@ -77,13 +73,6 @@ const FooterWrapper = styled.div`
     display: flex;
     align-items: center;
     text-transform: capitalize;
-
-    div {
-      position: relative;
-      width: 30px;
-      height: 30px;
-      margin-left: 5px;
-    }
   }
 
   .toTop {

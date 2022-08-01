@@ -5,6 +5,7 @@ export const SkillsContainer = styled.div`
   min-height: 100vh;
   height: auto;
   background-color: #1d1e22;
+  margin-bottom: 120px;
 `;
 
 export const SkillsWrapper = styled.div`

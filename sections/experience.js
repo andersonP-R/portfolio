@@ -4,11 +4,11 @@ import Image from "next/image";
 const works = [
   {
     id: 1,
-    name: "work1",
+    name: "blog",
     decrip: "this is a short descripcion about this work ",
-    picture: "dolly.jpg",
-    title: "Work 1",
-    url: "https://google.com",
+    picture: "blog-img-4.jpg",
+    title: "Blog",
+    url: "https://larivera.netlify.app",
   },
   {
     id: 2,
@@ -45,7 +45,11 @@ export const Experience = () => {
           {works.map((work) => (
             <div key={work.id} className="work-card">
               <div className="work-card__img-container">
-                <Image src={`/images/${work.picture}`} layout="fill" />
+                <Image
+                  src={`/images/${work.picture}`}
+                  layout="fill"
+                  objectFit="cover"
+                />
               </div>
               <div className="work-card__work-info">
                 <h2 className="work-card__title">{work.title}</h2>

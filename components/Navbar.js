@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import {
   Container,
@@ -17,12 +17,6 @@ import { FaBars, FaTimes } from "react-icons/fa";
 export const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [bgNav, setBgNav] = useState(false);
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", () => {
-  //     window.pageYOffset > 600 ? setBgNav(true) : setBgNav(false);
-  //   });
-  // }, []);
 
   return (
     <Container bgNav={bgNav}>

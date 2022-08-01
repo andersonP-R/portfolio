@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const ContactContainer = styled.section`
   width: 100%;
-  height: 85vh;
+  min-height: 85vh;
+  height: auto;
   padding: 10px;
   background-color: #1d1e22;
 `;
@@ -14,13 +15,12 @@ export const ContactWrapper = styled.div`
   border: 1px solid white;
   display: flex;
   justify-content: center;
+  padding-top: 80px;
 
   .buzon-container {
-    position: absolute;
-    width: 800px;
-    height: 450px;
-    left: 80px;
-    margin-top: 80px;
+    position: relative;
+    width: 510px;
+    height: 500px;
   }
 
   .form-container {
@@ -30,7 +30,6 @@ export const ContactWrapper = styled.div`
     justify-content: center;
     gap: 10px;
     width: 40%;
-    margin-top: 40px;
 
     .contact-title {
       font-size: 50px;
@@ -45,7 +44,6 @@ export const ContactWrapper = styled.div`
     .contact-form {
       display: flex;
       flex-direction: column;
-      width: 50%;
       height: auto;
       gap: 20px;
 
@@ -85,10 +83,9 @@ export const ContactWrapper = styled.div`
   }
 
   .plane-container {
-    position: absolute;
+    position: relative;
     width: 450px;
     height: 450px;
-    right: 40px;
-    margin-top: 150px;
+    margin-top: 50px;
   }
 `;

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
+import { Social } from "../components/Social";
 import { About } from "../sections/about";
 import { Contact } from "../sections/contact";
 import { Experience } from "../sections/experience";
@@ -17,6 +18,7 @@ export default function Home() {
       </Head>
 
       <Navbar />
+      <Social />
       <Hero />
       <About />
       <Experience />

@@ -5,16 +5,18 @@ export const AboutContainer = styled.div`
   height: 100vh;
   min-height: 600px;
   background-color: #1d1e22;
+  margin-bottom: 120px;
 `;
 
 export const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
   max-width: 1200px;
   height: 100%;
   margin: 0px auto;
   border-right: 2px solid #eeeef84d;
 
-  display: flex;
-  align-items: center;
+  padding-top: 60px;
 `;
 
 export const ImgContainer = styled.div`

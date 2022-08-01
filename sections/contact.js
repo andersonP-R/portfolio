@@ -10,7 +10,7 @@ export const Contact = () => {
     <ContactContainer id="contact">
       <ContactWrapper>
         <div className="buzon-container">
-          <Image src="/images/buzon.png" layout="fill" />
+          <Image src="/images/buzon-6.png" layout="fill" />
         </div>
         <div className="form-container">
           <h1 className="contact-title">Get in touch</h1>

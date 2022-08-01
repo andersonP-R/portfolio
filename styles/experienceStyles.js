@@ -5,6 +5,7 @@ export const Container = styled.div`
   min-height: 100vh;
   height: auto;
   background-color: #1d1e22;
+  margin-bottom: 120px;
 `;
 
 export const Wrapper = styled.div`
@@ -52,17 +53,6 @@ export const Wrapper = styled.div`
       line-height: 200px;
       text-shadow: 2px 2px 0px red;
     }
-
-    /* .t-4 {
-      height: 120px;
-      text-transform: uppercase;
-      color: #9ea8ab;
-      font-size: 200px;
-      font-weight: bolder;
-      line-height: 200px;
-
-      border: 1px solid red;
-    } */
   }
 `;
 
@@ -70,16 +60,25 @@ export const WorksCont = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
-  margin: 10px;
 
   .work-card {
     height: auto;
-    margin: 30px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.6px);
+    -webkit-backdrop-filter: blur(4.6px);
+    border: 1px solid rgba(255, 255, 255, 0.33);
+    overflow: hidden;
+    transition: 0.3s ease-out;
 
     .work-card__img-container {
       position: relative;
       width: 100%;
       height: 300px;
+      opacity: 0.5;
+      transition: 0.3s ease-in-out;
     }
 
     .work-card__work-info {
@@ -87,6 +86,7 @@ export const WorksCont = styled.div`
       flex-direction: column;
       padding: 10px;
       gap: 5px;
+      transition: 300ms ease-in-out;
 
       .work-card__title {
         font-size: 25px;
@@ -101,6 +101,19 @@ export const WorksCont = styled.div`
       .work-card__url {
         text-decoration: none;
         color: #0060ad;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.15);
+      z-index: 10;
+
+      .work-card__img-container {
+        opacity: 1;
+      }
+
+      .work-card__work-info {
+        transform: scale(0.9);
       }
     }
   }
