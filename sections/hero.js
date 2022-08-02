@@ -13,12 +13,12 @@ export const Hero = () => {
         <Description>
           <h1>Hi, my name is</h1>
           <h2>Anderson Rivera.</h2>
-          <h3>I'm a software developer</h3>
+          <h3>I'm a Front-end developer</h3>
           <p>
-            Passionate bout tecnology and the best coder in the wordl. Dominando
-            tecnologias como React, vue y Angular js
+            Passionate about technology and specialized in front-end
+            development, I build solutions that help people achieve their goals.
           </p>
-          <a href="#about">Lets start</a>
+          <a href="#about">Let's start</a>
         </Description>
         <ImgContainer>
           <Image src="/images/image-removebg.png" layout="fill" />

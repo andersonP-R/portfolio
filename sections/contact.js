@@ -14,12 +14,15 @@ export const Contact = () => {
         </div>
         <div className="form-container">
           <h1 className="contact-title">Get in touch</h1>
-          <p className="contact-decrip">Short description should be here</p>
+          <p className="contact-decrip">
+            I may not respond to your email the same day, but I will certainly
+            reply with a "Hello" the next day.
+          </p>
           <form className="contact-form">
-            <input type="text" name="nombre" placeholder="Nombre" />
+            <input type="text" name="nombre" placeholder="Name" />
             <input type="email" name="nombre" placeholder="Email" />
-            <textarea name="asunto" placeholder="Asunto" />
-            <input type="submit" value="Enviar" />
+            <textarea name="asunto" placeholder="Subject" />
+            <input type="submit" value="Send" />
           </form>
         </div>
         <div className="plane-container">

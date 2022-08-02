@@ -22,12 +22,13 @@ export const About = () => {
           </div>
 
           <p className="p-1">
-            Hello! My name is Anderson and I build things for the web. Usually
-            work whit HTML, CSS, JavaScript and React.
+            Hello! My name is Anderson and I build things for the web. I am a
+            self-taught person who likes to create things that others can use or
+            need.
           </p>
           <p className="p-2">
-            I enjoy creating things that help people to achieve their purposes
-            using tecnology to make useful tools,
+            I usually work with React, JavaScript and some Python but I'm always
+            open to learn new things.
           </p>
         </Description>
         <TableCont>

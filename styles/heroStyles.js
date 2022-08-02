@@ -45,9 +45,9 @@ export const Description = styled.div`
   }
 
   p {
-    display: block;
-    width: 420px;
-    font-size: 20px;
+    width: 65%;
+    line-height: 24px;
+    font-size: 18px;
     margin-bottom: 50px;
   }
 
@@ -56,6 +56,7 @@ export const Description = styled.div`
     text-decoration: none;
     border: 3px solid #0062ae;
     color: #9ea8ab;
+    font-size: 16px;
     padding: 17px;
     bottom: -15px;
     border-radius: 5px;

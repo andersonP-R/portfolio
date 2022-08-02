@@ -40,10 +40,8 @@ export const Description = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-right: 50px;
-  margin-bottom: 100px;
+  padding-right: 26px;
   text-align: right;
-  padding-top: 180px;
 
   .title-container {
     display: flex;
@@ -65,14 +63,14 @@ export const Description = styled.div`
     }
   }
 
-  .p-1 {
+  .p-1,
+  .p-2 {
     color: #9ea8ab;
     width: 100%;
-    font-size: 30px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .p-2 {
-    width: 100%;
-    font-size: 30px;
     color: #0060ad;
   }
 `;

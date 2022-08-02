@@ -28,16 +28,18 @@ export const ContactWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     width: 40%;
 
     .contact-title {
+      text-transform: capitalize;
       font-size: 50px;
       color: #9ea8ab;
     }
 
     .contact-decrip {
-      font-size: 18px;
+      text-align: center;
+      font-size: 16px;
       color: #9ea8ab;
     }
 
@@ -45,7 +47,8 @@ export const ContactWrapper = styled.div`
       display: flex;
       flex-direction: column;
       height: auto;
-      gap: 20px;
+      gap: 15px;
+      margin-bottom: 25px;
 
       input {
         height: 45px;
@@ -72,7 +75,7 @@ export const ContactWrapper = styled.div`
         min-width: 240px;
         max-width: 240px;
         min-height: 80px;
-        max-height: 200px;
+        max-height: 120px;
         background-color: #1d1e22e6;
         outline: none;
         color: white;

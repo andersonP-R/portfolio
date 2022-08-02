@@ -76,7 +76,7 @@ export const MenuItemLink = styled.a`
   font-size: 16px;
   text-decoration: none;
   transition: 0.6s all ease;
-  border-bottom: 1px solid transparent;
+  border-bottom: 3px solid transparent;
 
   &:hover {
     border-color: red;
