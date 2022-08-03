@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { Colors } from "./GlobalStyles";
 
 export const Container = styled.div`
   width: 100%;
   height: 80px;
-  background-color: #1d1e2299;
+  background-color: ${Colors["black-color"]}99;
   position: fixed;
   z-index: 999;
   transition: 0.3s ease;
@@ -22,8 +23,6 @@ export const Wrapper = styled.div`
 export const Logo = styled.div`
   position: relative;
   width: 100px;
-  /* height: 80px; */
-  /* z-index: 999; */
   margin-left: 10px;
   a {
     width: 100%;
@@ -79,7 +78,7 @@ export const MenuItemLink = styled.a`
   border-bottom: 3px solid transparent;
 
   &:hover {
-    border-color: red;
+    border-color: ${Colors["red-color"]};
     transition: 0.2s all ease;
   }
 
@@ -127,6 +126,7 @@ export const MobileIcon = styled.div`
     display: flex;
     align-items: center;
     cursor: pointer;
+    font-size: 30px;
 
     svg {
       fill: white;

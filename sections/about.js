@@ -2,7 +2,6 @@ import Image from "next/image";
 import {
   AboutContainer,
   Description,
-  FaceCont,
   ImgContainer,
   TableCont,
   Wrapper,
@@ -15,6 +14,7 @@ export const About = () => {
         <ImgContainer>
           <Image src="/images/person-sillh.png" layout="fill" />
         </ImgContainer>
+
         <Description>
           <div className="title-container">
             <div className="t-1">About</div>

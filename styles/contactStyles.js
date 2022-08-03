@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import { Colors } from "./GlobalStyles";
 
 export const ContactContainer = styled.section`
   width: 100%;
   min-height: 85vh;
   height: auto;
   padding: 10px;
-  background-color: #1d1e22;
+  background-color: ${Colors["black-color"]};
 `;
 
 export const ContactWrapper = styled.div`
@@ -28,59 +29,36 @@ export const ContactWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 120px;
     gap: 20px;
     width: 40%;
 
     .contact-title {
+      color: ${Colors["white-color"]}f2;
       text-transform: capitalize;
       font-size: 50px;
-      color: #9ea8ab;
     }
 
     .contact-decrip {
+      color: ${Colors["gray-color"]};
+
       text-align: center;
       font-size: 16px;
-      color: #9ea8ab;
+      line-height: 24px;
     }
 
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-      height: auto;
-      gap: 15px;
-      margin-bottom: 25px;
+    a {
+      text-decoration: none;
+      border: 1px solid ${Colors["gray-color"]};
+      padding: 15px;
+      font-size: 18px;
+      color: ${Colors["gray-color"]};
+      border-radius: 5px;
+      margin-top: 20px;
+      transition: 0.3s ease;
 
-      input {
-        height: 45px;
-        background-color: #1d1e22f2;
-        outline: none;
-        color: #eeeef8;
-        padding: 10px;
-        z-index: 10;
-        font-size: 15px;
-
-        &:last-child {
-          cursor: pointer;
-          width: 80px;
-          margin: 0px auto;
-          transition: 0.2s ease;
-        }
-
-        &:last-child:hover {
-          background-color: #9ea8ab1a;
-        }
-      }
-
-      textarea {
-        min-width: 240px;
-        max-width: 240px;
-        min-height: 80px;
-        max-height: 120px;
-        background-color: #1d1e22e6;
-        outline: none;
-        color: white;
-        padding: 10px;
-        z-index: 10;
+      &:hover {
+        background: ${Colors["gray-color"]}1a;
       }
     }
   }

@@ -1,8 +1,4 @@
-import {
-  ContactContainer,
-  ContactWrapper,
-  Plane,
-} from "../styles/contactStyles";
+import { ContactContainer, ContactWrapper } from "../styles/contactStyles";
 import Image from "next/image";
 
 export const Contact = () => {
@@ -18,12 +14,13 @@ export const Contact = () => {
             I may not respond to your email the same day, but I will certainly
             reply with a "Hello" the next day.
           </p>
-          <form className="contact-form">
-            <input type="text" name="nombre" placeholder="Name" />
-            <input type="email" name="nombre" placeholder="Email" />
-            <textarea name="asunto" placeholder="Subject" />
-            <input type="submit" value="Send" />
-          </form>
+          <a
+            href="mailto:gamer1999r@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Say Hello!
+          </a>
         </div>
         <div className="plane-container">
           <Image src="/images/plane.png" layout="fill" />

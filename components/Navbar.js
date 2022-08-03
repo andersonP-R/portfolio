@@ -24,7 +24,7 @@ export const Navbar = () => {
         <Logo>
           <Link href="/">
             <a>
-              <Image src="/images/logo5.png" layout="fill" />
+              <Image src="/images/logo-variant-gray3.png" layout="fill" />
             </a>
           </Link>
         </Logo>

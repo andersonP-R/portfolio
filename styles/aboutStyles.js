@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import { Colors } from "./GlobalStyles";
 
 export const AboutContainer = styled.div`
   width: 100%;
   height: 100vh;
   min-height: 600px;
-  background-color: #1d1e22;
+  background-color: ${Colors["black-color"]};
   margin-bottom: 120px;
 `;
 
@@ -51,26 +52,24 @@ export const Description = styled.div`
     .t-2 {
       font-weight: bolder;
       text-transform: uppercase;
-      color: #eeeef8cc;
+      color: ${Colors["white-color"]}f2;
       font-size: 140px;
     }
 
     .t-2 {
-      /* height: 100px; */
-      /* margin-left: 18px; */
-      border: 1px solid red;
+      border: 1px solid ${Colors["red-color"]};
       padding: 0px 10px;
     }
   }
 
   .p-1,
   .p-2 {
-    color: #9ea8ab;
+    color: ${Colors["gray-color"]};
     width: 100%;
     font-size: 18px;
     line-height: 24px;
   }
   .p-2 {
-    color: #0060ad;
+    color: ${Colors["blue-color"]};
   }
 `;

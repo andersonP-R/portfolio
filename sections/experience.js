@@ -1,11 +1,13 @@
 import { Container, WorksCont, Wrapper } from "../styles/experienceStyles";
 import Image from "next/image";
 
+import { FaLink } from "react-icons/fa";
+
 const works = [
   {
     id: 1,
     name: "blog",
-    decrip: "this is a short descripcion about this work ",
+    decrip: "Blog created with React",
     picture: "blog-img-4.jpg",
     title: "Blog",
     url: "https://larivera.netlify.app",
@@ -13,9 +15,10 @@ const works = [
   {
     id: 2,
     name: "work2",
-    decrip: "this is a short descripcion about this work ",
+    decrip:
+      "Application made with React that checks the weather of a city in real time",
     picture: "dolly.jpg",
-    title: "Work 2",
+    title: "Wheater app",
     url: "https://google.com",
   },
   {
@@ -56,6 +59,7 @@ export const Experience = () => {
                 <p className="work-card__descrip">{work.decrip}</p>
                 <a className="work-card__url" href={work.url} target="_blank">
                   Check it out
+                  <FaLink />
                 </a>
               </div>
             </div>
