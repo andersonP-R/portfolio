@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Footer } from "../components/Footer";
-import { Navbar } from "../components/Navbar";
+import { NavBar2 } from "../components/NavBar2";
 import { Social } from "../components/Social";
 import { About } from "../sections/about";
 import { Contact } from "../sections/contact";
@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
+      <NavBar2 />
       <Social />
       <Hero />
       <About />
