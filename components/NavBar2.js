@@ -2,7 +2,7 @@ import Image from "next/image";
 import styled from "styled-components";
 import { useState } from "react";
 
-import { HamburguerButton } from "./hamburguerButton";
+import { HamburguerButton } from "./HamburguerButton";
 import { Colors } from "../styles/GlobalStyles";
 
 export const NavBar2 = () => {
@@ -14,7 +14,7 @@ export const NavBar2 = () => {
     <NavContainer>
       <div className="nav-logo">
         <a href="/">
-          <Image src="/images/log-letters.png" layout="fill" />
+          <Image src="/images/log-name.png" layout="fill" />
         </a>
       </div>
 
@@ -56,23 +56,29 @@ export const NavBar2 = () => {
 
 const NavContainer = styled.nav`
   width: 100%;
-  height: 80px;
+  height: 100px;
   position: fixed;
   z-index: 999;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 10px;
+  padding: 0px 22px;
 
   .nav-logo {
     position: relative;
-    width: 200px;
-    height: 80px;
+    width: 160px;
+    height: 60px;
+    transition: 0.2s ease;
+
     a {
       display: block;
       width: 100%;
       height: 100%;
       position: relative;
+    }
+
+    &:hover {
+      transform: scale(1.05);
     }
   }
 
@@ -84,7 +90,7 @@ const NavContainer = styled.nav`
     height: 100vh;
     top: 0;
     left: -100%;
-    padding: 25px;
+    padding: 20px;
     list-style: none;
     background-color: ${Colors["black-color"]};
     transition: all 0.3s ease;
@@ -92,6 +98,7 @@ const NavContainer = styled.nav`
     .item {
       font-size: 100px;
       width: 100%;
+      margin-bottom: 8px;
 
       a {
         text-decoration: none;

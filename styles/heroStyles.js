@@ -6,7 +6,6 @@ export const HeroContainer = styled.div`
   height: 100vh;
   min-height: 600px;
   background-color: ${Colors["black-color"]};
-  padding-top: 10px;
 `;
 
 export const HeroWrapper = styled.div`

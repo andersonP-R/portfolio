@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Colors } from "../styles/GlobalStyles";
 
 export const HamburguerButton = ({ open, handleOpen }) => {
   return (
@@ -16,7 +17,6 @@ export const HamburguerButton = ({ open, handleOpen }) => {
 };
 
 const Burguer = styled.div`
-  /* nav-icon-5 */
   .nav-icon-5 {
     width: 35px;
     height: 30px;
@@ -26,7 +26,7 @@ const Burguer = styled.div`
     display: inline-block;
   }
   .nav-icon-5 span {
-    background-color: #fff;
+    background-color: ${Colors["white-color"]};
     position: absolute;
     border-radius: 2px;
     transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
