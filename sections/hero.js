@@ -1,10 +1,11 @@
+import Image from "next/image";
+
 import {
   HeroContainer,
   Description,
   ImgContainer,
   HeroWrapper,
 } from "../styles/heroStyles";
-import Image from "next/image";
 
 export const Hero = () => {
   return (

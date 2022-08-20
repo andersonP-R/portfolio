@@ -33,6 +33,7 @@ export const Wrapper = styled.div`
       color: ${Colors["white-color"]}f2;
       font-size: 140px;
       font-weight: bolder;
+      padding: 10px;
       border: 1px solid ${Colors["red-color"]};
     }
 
@@ -49,7 +50,7 @@ export const Wrapper = styled.div`
     .t-3 {
       text-transform: uppercase;
       color: ${Colors["white-color"]}f2;
-      font-size: 200px;
+      font-size: 178px;
       font-weight: bolder;
       line-height: 200px;
     }
@@ -76,7 +77,7 @@ export const WorksCont = styled.div`
     .work-card__img-container {
       position: relative;
       width: 100%;
-      height: 280px;
+      height: 250px;
       opacity: 0.5;
       transition: 0.3s ease-in-out;
     }
@@ -113,7 +114,7 @@ export const WorksCont = styled.div`
     }
 
     &:hover {
-      transform: scale(1.15);
+      border-color: ${Colors["blue-color"]};
       z-index: 10;
 
       .work-card__img-container {

@@ -6,32 +6,35 @@ export const HeroContainer = styled.div`
   height: 100vh;
   min-height: 600px;
   background-color: ${Colors["black-color"]};
+  margin-bottom: 80px;
 `;
 
 export const HeroWrapper = styled.div`
   max-width: 1200px;
   height: 100%;
   margin: 0px auto;
-  border-top: 1px solid ${Colors["white-color"]};
-  border-left: 2px solid ${Colors["white-color"]}bf;
-  border-right: 2px solid ${Colors["white-color"]}4d;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-top: 50px;
 `;
 
 export const Description = styled.div`
   width: 70%;
-  border: 1px solid ${Colors["black-gray-color"]};
   position: relative;
   padding: 15px 50px;
   left: -30px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 
   h1 {
     color: ${Colors["blue-color"]};
     font-size: 20px;
     font-weight: lighter;
     letter-spacing: 1px;
+    padding-top: 15px;
   }
 
   h2 {
@@ -56,18 +59,18 @@ export const Description = styled.div`
   a {
     position: absolute;
     text-decoration: none;
-    border: 3px solid ${Colors["blue-color"]};
+    border: 2px solid ${Colors["blue-color"]};
     color: ${Colors["white-color"]};
     font-size: 16px;
     padding: 17px;
-    bottom: -15px;
+    bottom: -30px;
     border-radius: 5px;
     z-index: 10;
     transition: 0.2s ease;
   }
 
   a:hover {
-    border: 3px solid ${Colors["white-color"]};
+    border-color: ${Colors["white-color"]};
     background-color: ${Colors["blue-color"]}b3;
     color: ${Colors["white-color"]};
   }
@@ -75,10 +78,10 @@ export const Description = styled.div`
 
 export const ImgContainer = styled.div`
   position: absolute;
-  right: 160px;
-  width: 680px;
-  height: 450px;
-  border: 4px solid ${Colors["gray-color"]};
+  right: 150px;
+  width: 690px;
+  height: 500px;
+  border: 2px solid ${Colors["gray-color"]};
   opacity: 0.5;
   transition: 0.3s ease;
 
@@ -91,6 +94,6 @@ export const ImgContainer = styled.div`
   }
 
   @media screen and (max-width: 1400px) {
-    right: 35px;
+    right: 60px;
   }
 `;

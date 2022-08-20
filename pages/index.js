@@ -1,5 +1,7 @@
 import Head from "next/head";
+import { useEffect, useState } from "react";
 import { Footer } from "../components/Footer";
+import { Loader } from "../components/Loader";
 import { NavBar2 } from "../components/NavBar2";
 import { Social } from "../components/Social";
 import { About } from "../sections/about";
@@ -9,6 +11,14 @@ import { Hero } from "../sections/hero";
 import { Skills } from "../sections/skills";
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+  }, []);
+
   return (
     <div>
       <Head>
@@ -17,14 +27,29 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <NavBar2 />
+      {/* <NavBar2 />
       <Social />
       <Hero />
       <About />
       <Experience />
       <Skills />
       <Contact />
-      <Footer />
+      <Footer /> */}
+
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <main>
+          <NavBar2 />
+          <Social />
+          <Hero />
+          <About />
+          <Experience />
+          <Skills />
+          <Contact />
+          <Footer />
+        </main>
+      )}
     </div>
   );
 }

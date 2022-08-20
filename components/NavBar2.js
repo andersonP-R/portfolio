@@ -14,7 +14,7 @@ export const NavBar2 = () => {
     <NavContainer>
       <div className="nav-logo">
         <a href="/">
-          <Image src="/images/log-name.png" layout="fill" />
+          <Image src="/images/icon-log.png" layout="fill" />
         </a>
       </div>
 
@@ -66,8 +66,8 @@ const NavContainer = styled.nav`
 
   .nav-logo {
     position: relative;
-    width: 160px;
-    height: 60px;
+    width: 100px;
+    height: 80px;
     transition: 0.2s ease;
 
     a {
@@ -75,10 +75,6 @@ const NavContainer = styled.nav`
       width: 100%;
       height: 100%;
       position: relative;
-    }
-
-    &:hover {
-      transform: scale(1.05);
     }
   }
 

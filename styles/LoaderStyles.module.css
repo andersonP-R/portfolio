@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Raleway:wght@300&display=swap");
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.svg{
+    opacity: 1;
+}
+
+.letter{
+    font-family: 'Crimson Text', sans-serif;
+}
+
+.letterA{
+    opacity: 0;
+    
+}
+
+.letterR{
+    opacity: 0;
+    /* top: 500; */
+}
+
+.box1{
+ opacity: 0;   
+}
+
+.box3{
+    opacity: 0;    
+}
+
+
+.box2{
+    opacity: 0;
+}
+
+
+
