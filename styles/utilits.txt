@@ -1,7 +1,0 @@
-container border colors vars
-- black color: #1d1e22
-- white color: #eeeef8
-- descrip color: #565668
-- blue color: #0062ae
-- gray color: #9ea8ab
-- red color: #910001

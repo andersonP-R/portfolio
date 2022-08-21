@@ -51,7 +51,7 @@ export const Skills = () => {
     <MainContainer id="skills">
       <SkillsWrapper>
         <h1>Skillset</h1>
-        <SkillBox>
+        <div className="skill-box">
           {skills.map((skill) => (
             <div key={skill.id} className="skill-card">
               <div className="skill-card__img-container">
@@ -64,7 +64,7 @@ export const Skills = () => {
               <h2 className="skill-card__title">{skill.title}</h2>
             </div>
           ))}
-        </SkillBox>
+        </div>
       </SkillsWrapper>
     </MainContainer>
   );
