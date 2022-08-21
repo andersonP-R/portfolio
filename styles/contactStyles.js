@@ -1,22 +1,15 @@
 import styled from "styled-components";
 import { Colors } from "./GlobalStyles";
 
-export const ContactContainer = styled.section`
-  width: 100%;
-  min-height: 85vh;
-  height: auto;
-  padding: 10px;
-  background-color: ${Colors["black-color"]};
-`;
-
 export const ContactWrapper = styled.div`
   max-width: 1200px;
-  height: 100%;
+  height: 100vh;
   margin: 0px auto;
-  border: 1px solid white;
+  border: 1px solid ${Colors["white-color"]};
   display: flex;
   justify-content: center;
   padding-top: 80px;
+  margin-bottom: 30px;
 
   .buzon-container {
     position: relative;
@@ -29,7 +22,7 @@ export const ContactWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 120px;
+    margin-bottom: 60px;
     gap: 20px;
     width: 40%;
 

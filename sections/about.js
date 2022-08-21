@@ -1,15 +1,15 @@
 import Image from "next/image";
 import {
-  AboutContainer,
   Description,
   ImgContainer,
   TableCont,
   Wrapper,
 } from "../styles/aboutStyles";
+import { MainContainer } from "../styles/GlobalStyles";
 
 export const About = () => {
   return (
-    <AboutContainer id="about">
+    <MainContainer id="about">
       <Wrapper>
         <ImgContainer>
           <Image src="/images/person-sillh.png" layout="fill" />
@@ -30,11 +30,11 @@ export const About = () => {
             I usually work with React, JavaScript and some Python but I'm always
             open to learn new things.
           </p>
+          <TableCont>
+            <Image src="/images/board-2.png" layout="fill" />
+          </TableCont>
         </Description>
-        <TableCont>
-          <Image src="/images/board-2.png" layout="fill" />
-        </TableCont>
       </Wrapper>
-    </AboutContainer>
+    </MainContainer>
   );
 };

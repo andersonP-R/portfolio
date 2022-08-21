@@ -1,20 +1,15 @@
 import styled from "styled-components";
 import { Colors } from "./GlobalStyles";
 
-export const SkillsContainer = styled.div`
-  width: 100%;
-  min-height: 100vh;
-  height: auto;
-  background-color: #1d1e22;
-  margin-bottom: 120px;
-`;
-
 export const SkillsWrapper = styled.div`
-  max-width: 1200px;
-  height: 100%;
-  margin: 0px auto;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  height: auto;
+  margin: 0px auto;
+  margin-bottom: 100px;
 
   h1 {
     margin-top: 90px;

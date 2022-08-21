@@ -5,6 +5,7 @@ import {
   SkillsWrapper,
 } from "../styles/skillsStyles";
 import Image from "next/image";
+import { MainContainer } from "../styles/GlobalStyles";
 
 const skills = [
   {
@@ -47,7 +48,7 @@ const skills = [
 
 export const Skills = () => {
   return (
-    <SkillsContainer id="skills">
+    <MainContainer id="skills">
       <SkillsWrapper>
         <h1>Skillset</h1>
         <SkillBox>
@@ -65,6 +66,6 @@ export const Skills = () => {
           ))}
         </SkillBox>
       </SkillsWrapper>
-    </SkillsContainer>
+    </MainContainer>
   );
 };

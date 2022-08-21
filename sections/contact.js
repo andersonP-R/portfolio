@@ -1,9 +1,10 @@
-import { ContactContainer, ContactWrapper } from "../styles/contactStyles";
+import { ContactWrapper } from "../styles/contactStyles";
 import Image from "next/image";
+import { MainContainer } from "../styles/GlobalStyles";
 
 export const Contact = () => {
   return (
-    <ContactContainer id="contact">
+    <MainContainer id="contact">
       <ContactWrapper>
         <div className="buzon-container">
           <Image src="/images/buzon-6.png" layout="fill" />
@@ -26,6 +27,6 @@ export const Contact = () => {
           <Image src="/images/plane.png" layout="fill" />
         </div>
       </ContactWrapper>
-    </ContactContainer>
+    </MainContainer>
   );
 };

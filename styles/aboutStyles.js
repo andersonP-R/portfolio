@@ -1,30 +1,23 @@
 import styled from "styled-components";
 import { Colors } from "./GlobalStyles";
 
-export const AboutContainer = styled.div`
-  width: 100%;
-  height: 100vh;
-  min-height: 600px;
-  background-color: ${Colors["black-color"]};
-  margin-bottom: 120px;
-`;
-
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   max-width: 1200px;
-  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
   margin: 0px auto;
   border-right: 2px solid #eeeef84d;
-
-  padding-top: 60px;
+  padding-top: 20px;
+  margin-bottom: 100px;
 `;
 
 export const ImgContainer = styled.div`
   position: relative;
   width: 50%;
   height: 650px;
-  z-index: 10;
   margin-bottom: 50px;
 `;
 
@@ -32,11 +25,12 @@ export const TableCont = styled.div`
   position: absolute;
   width: 500px;
   height: 600px;
-  right: 60px;
   opacity: 0.06;
+  top: -200px;
 `;
 
 export const Description = styled.div`
+  position: relative;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -47,6 +41,7 @@ export const Description = styled.div`
   .title-container {
     display: flex;
     justify-content: end;
+    box-sizing: border-box;
 
     .t-1,
     .t-2 {

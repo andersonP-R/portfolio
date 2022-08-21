@@ -33,20 +33,21 @@ export const Footer = () => {
 
 const FooterContainer = styled.footer`
   width: 100%;
-  min-height: 15vh;
-  height: 15vh;
-  padding: 10px;
+  height: 10vh;
+  padding: 0px 100px;
   background-color: #1d1e22;
 `;
 
 const FooterWrapper = styled.div`
-  max-width: 1200px;
-  height: 100%;
-  margin: 0px auto;
-  border: 1px solid white;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  height: 10vh;
+  margin: 0px auto;
+  border: 1px solid white;
+  margin-bottom: 10px;
 
   .social-container {
     font-size: 25px;

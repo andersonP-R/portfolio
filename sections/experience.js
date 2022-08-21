@@ -2,6 +2,7 @@ import { Container, WorksCont, Wrapper } from "../styles/experienceStyles";
 import Image from "next/image";
 
 import { FaLink } from "react-icons/fa";
+import { MainContainer } from "../styles/GlobalStyles";
 
 const works = [
   {
@@ -29,11 +30,19 @@ const works = [
     title: "Work 3",
     url: "https://google.com",
   },
+  {
+    id: 4,
+    name: "work2",
+    decrip: "this is a short descripcion about this work ",
+    picture: "dolly.jpg",
+    title: "Work 3",
+    url: "https://google.com",
+  },
 ];
 
 export const Experience = () => {
   return (
-    <Container id="experience">
+    <MainContainer id="experience">
       <Wrapper>
         <div className="title-container">
           <div className="t-1">some</div>
@@ -66,6 +75,6 @@ export const Experience = () => {
           ))}
         </WorksCont>
       </Wrapper>
-    </Container>
+    </MainContainer>
   );
 };

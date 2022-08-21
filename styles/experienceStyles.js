@@ -1,29 +1,21 @@
 import styled from "styled-components";
 import { Colors } from "./GlobalStyles";
 
-export const Container = styled.div`
-  width: 100%;
-  min-height: 100vh;
-  height: auto;
-  background-color: ${Colors["black-color"]};
-  margin-bottom: 120px;
-`;
-
 export const Wrapper = styled.div`
-  max-width: 1200px;
-  height: 100%;
-  margin: 0px auto;
-  border-left: 1px solid ${Colors["white-color"]};
-  padding-top: 80px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0px auto;
+  border-left: 1px solid ${Colors["white-color"]};
+  padding-top: 60px;
+  margin-bottom: 100px;
 
   .title-container {
     display: flex;
-    height: 90px;
+    height: 110px;
 
     .t-1 {
       display: flex;
@@ -50,7 +42,7 @@ export const Wrapper = styled.div`
     .t-3 {
       text-transform: uppercase;
       color: ${Colors["white-color"]}f2;
-      font-size: 178px;
+      font-size: 160px;
       font-weight: bolder;
       line-height: 200px;
     }

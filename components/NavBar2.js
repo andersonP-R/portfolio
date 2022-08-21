@@ -66,7 +66,7 @@ const NavContainer = styled.nav`
 
   .nav-logo {
     position: relative;
-    width: 100px;
+    width: 90px;
     height: 80px;
     transition: 0.2s ease;
 
@@ -82,6 +82,7 @@ const NavContainer = styled.nav`
     position: absolute;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
     height: 100vh;
     top: 0;
@@ -106,6 +107,15 @@ const NavContainer = styled.nav`
           color: ${Colors["white-color"]};
         }
       }
+
+      @media screen and (max-width: 600px) {
+        font-size: 80px;
+        margin-bottom: 40px;
+      }
+
+      @media screen and (max-width: 500px) {
+        font-size: 55px;
+      }
     }
   }
 
@@ -118,6 +128,10 @@ const NavContainer = styled.nav`
     border-radius: 50%;
     overflow: hidden;
     z-index: 999;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 0px 10px 0px 8px;
   }
 `;
 

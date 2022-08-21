@@ -7,7 +7,7 @@ export const Social = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      window.pageYOffset > 2950
+      window.pageYOffset > 3450
         ? setHiddenSocial(true)
         : setHiddenSocial(false);
     });
@@ -51,5 +51,9 @@ const SocialContainer = styled.div`
       color: #eeeef8;
       font-size: 28px;
     }
+  }
+
+  @media screen and (max-width: 750px) {
+    display: none;
   }
 `;

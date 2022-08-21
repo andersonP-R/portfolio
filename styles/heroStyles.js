@@ -1,99 +1,167 @@
 import styled from "styled-components";
 import { Colors } from "./GlobalStyles";
 
-export const HeroContainer = styled.div`
-  width: 100%;
-  height: 100vh;
-  min-height: 600px;
-  background-color: ${Colors["black-color"]};
-  margin-bottom: 80px;
-`;
-
 export const HeroWrapper = styled.div`
+  width: 100%;
   max-width: 1200px;
-  height: 100%;
+  height: 100vh;
   margin: 0px auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding-top: 50px;
-`;
+  margin-bottom: 100px;
 
-export const Description = styled.div`
-  width: 70%;
-  position: relative;
-  padding: 15px 50px;
-  left: -30px;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  .desc-img-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 
-  h1 {
-    color: ${Colors["blue-color"]};
-    font-size: 20px;
-    font-weight: lighter;
-    letter-spacing: 1px;
-    padding-top: 15px;
-  }
+    .description {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      gap: 6px;
+      z-index: 10;
 
-  h2 {
-    color: ${Colors["white-color"]}f2;
-    font-size: 80px;
-  }
+      h1 {
+        color: ${Colors["blue-color"]};
+        font-size: 20px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        padding-top: 15px;
 
-  h3 {
-    color: ${Colors["gray-color"]};
-    font-size: 40px;
-    margin-bottom: 20px;
-  }
+        @media screen and (max-width: 500px) {
+          font-size: 18px;
+        }
+      }
 
-  p {
-    color: ${Colors["gray-color"]};
-    width: 65%;
-    line-height: 24px;
-    font-size: 18px;
-    margin-bottom: 50px;
-  }
+      h2 {
+        color: ${Colors["white-color"]}f2;
+        font-size: 80px;
 
-  a {
-    position: absolute;
-    text-decoration: none;
-    border: 2px solid ${Colors["blue-color"]};
-    color: ${Colors["white-color"]};
-    font-size: 16px;
-    padding: 17px;
-    bottom: -30px;
-    border-radius: 5px;
-    z-index: 10;
-    transition: 0.2s ease;
-  }
+        @media screen and (max-width: 960px) {
+          font-size: 70px;
+          line-height: 75px;
+        }
 
-  a:hover {
-    border-color: ${Colors["white-color"]};
-    background-color: ${Colors["blue-color"]}b3;
-    color: ${Colors["white-color"]};
-  }
-`;
+        @media screen and (max-width: 750px) {
+          font-size: 60px;
+        }
 
-export const ImgContainer = styled.div`
-  position: absolute;
-  right: 150px;
-  width: 690px;
-  height: 500px;
-  border: 2px solid ${Colors["gray-color"]};
-  opacity: 0.5;
-  transition: 0.3s ease;
+        @media screen and (max-width: 600px) {
+          font-size: 50px;
+        }
 
-  &:hover {
-    opacity: 0.8;
-  }
+        @media screen and (max-width: 500px) {
+          font-size: 40px;
+          line-height: 45px;
+        }
+      }
 
-  @media screen and (max-width: 1550px) {
-    right: 100px;
-  }
+      h3 {
+        color: ${Colors["gray-color"]};
+        font-size: 40px;
+        margin-bottom: 15px;
 
-  @media screen and (max-width: 1400px) {
-    right: 60px;
+        @media screen and (max-width: 960px) {
+          font-size: 38px;
+        }
+
+        @media screen and (max-width: 750px) {
+          font-size: 30px;
+        }
+
+        @media screen and (max-width: 500px) {
+          font-size: 30px;
+        }
+      }
+
+      p {
+        color: ${Colors["gray-color"]};
+        width: 65%;
+        line-height: 28px;
+        font-size: 20px;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 500px) {
+          font-size: 16px;
+          line-height: 22px;
+          width: 80%;
+        }
+      }
+
+      a {
+        display: block;
+        width: max-content;
+        text-decoration: none;
+        border: 2px solid ${Colors["blue-color"]};
+        color: ${Colors["white-color"]};
+        font-size: 16px;
+        padding: 17px;
+        border-radius: 5px;
+        z-index: 10;
+        transition: 0.2s ease;
+      }
+
+      a:hover {
+        border-color: ${Colors["white-color"]};
+        background-color: ${Colors["blue-color"]}b3;
+        color: ${Colors["white-color"]};
+      }
+    }
+
+    .img-container {
+      position: absolute;
+      width: 750px;
+      height: 570px;
+      right: -100px;
+      opacity: 0.5;
+      transition: 0.3s ease;
+
+      @media screen and (max-width: 960px) {
+        width: 650px;
+        height: 470px;
+        right: -150px;
+      }
+
+      @media screen and (max-width: 750px) {
+        left: 250px;
+      }
+
+      @media screen and (max-width: 600px) {
+        left: 160px;
+      }
+
+      @media screen and (max-width: 500px) {
+        width: 550px;
+        height: 370px;
+        left: 50px;
+      }
+    }
+
+    .box-1 {
+      position: absolute;
+      width: 600px;
+      height: 450px;
+      right: 0;
+      border: 1px solid ${Colors["black-gray-color"]};
+      transition: border-color 300ms ease-in-out;
+
+      &:hover {
+        border-color: ${Colors["white-color"]};
+      }
+
+      @media screen and (max-width: 960px) {
+        width: 800px;
+        height: 330px;
+        pointer-events: none;
+      }
+
+      @media screen and (max-width: 750px) {
+        display: none;
+      }
+    }
   }
 `;
