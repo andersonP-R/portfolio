@@ -7,7 +7,11 @@ export const HeroWrapper = styled.div`
   height: 100vh;
   margin: 0px auto;
   padding-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
+
+  @media screen and (max-width: 750px) {
+    margin-bottom: 0px;
+  }
 
   .desc-img-container {
     position: relative;
@@ -52,6 +56,7 @@ export const HeroWrapper = styled.div`
 
         @media screen and (max-width: 600px) {
           font-size: 50px;
+          line-height: 60px;
         }
 
         @media screen and (max-width: 500px) {
