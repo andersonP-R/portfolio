@@ -6,6 +6,7 @@ import {
   FaInstagram,
   FaChevronUp,
 } from "react-icons/fa";
+import { Colors } from "../styles/GlobalStyles";
 
 export const Footer = () => {
   return (
@@ -35,7 +36,18 @@ const FooterContainer = styled.footer`
   width: 100%;
   height: 10vh;
   padding: 0px 100px;
-  background-color: #1d1e22;
+
+  @media screen and (max-width: 960px) {
+    padding: 0px 80px;
+  }
+
+  @media screen and (max-width: 750px) {
+    padding: 0px 40px;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 0px 25px;
+  }
 `;
 
 const FooterWrapper = styled.div`
@@ -44,16 +56,28 @@ const FooterWrapper = styled.div`
   align-items: center;
   max-width: 1200px;
   width: 100%;
-  height: 10vh;
+  height: 12vh;
   margin: 0px auto;
-  border: 1px solid white;
-  margin-bottom: 10px;
+  border: 1px solid ${Colors["white-color"]};
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 750px) {
+    justify-content: space-between;
+    border: none;
+  }
+
+  @media screen and (max-width: 550px) {
+    flex-direction: column;
+    height: 7vh;
+    margin-bottom: 50px;
+    gap: 10px;
+  }
 
   .social-container {
-    font-size: 25px;
+    font-size: 20px;
 
     a {
-      color: #9ea8ab;
+      color: ${Colors["gray-color"]};
       transition: 0.2s ease;
 
       padding-right: 15px;
@@ -63,30 +87,35 @@ const FooterWrapper = styled.div`
       }
 
       &:hover {
-        color: #eeeef8;
+        color: ${Colors["white-color"]};
       }
     }
   }
 
   h2 {
-    color: #9ea8ab;
+    color: ${Colors["gray-color"]};
     font-size: 16px;
     display: flex;
     align-items: center;
     text-transform: capitalize;
+    text-align: center;
   }
 
   .toTop {
     padding: 5px 10px;
-    color: #9ea8ab;
-    border: 1px solid #9ea8ab;
+    color: ${Colors["gray-color"]};
+    border: 1px solid ${Colors["gray-color"]};
     cursor: pointer;
     z-index: 10;
     transition: 0.2s ease;
 
     &:hover {
-      color: #eeeef8;
-      background-color: #9ea8ab4d;
+      color: ${Colors["white-color"]};
+      background-color: ${Colors["gray-color"]}4d;
+    }
+
+    @media screen and (max-width: 550px) {
+      display: none;
     }
   }
 `;
