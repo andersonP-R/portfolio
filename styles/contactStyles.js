@@ -3,12 +3,13 @@ import { Colors } from "./GlobalStyles";
 
 export const ContactWrapper = styled.div`
   position: relative;
+  display: flex;
+  justify-content: center;
   max-width: 1200px;
   height: 100vh;
   margin: 0px auto;
   border: 1px solid ${Colors["white-color"]};
-  display: flex;
-  justify-content: center;
+
   padding-top: 80px;
   margin-bottom: 30px;
   overflow: hidden;
@@ -23,7 +24,7 @@ export const ContactWrapper = styled.div`
   .buzon-container {
     position: absolute;
     width: 500px;
-    height: 500px;
+    height: 550px;
     left: 0px;
 
     /* MEDIA QUERY */
@@ -97,8 +98,8 @@ export const ContactWrapper = styled.div`
 
   .plane-container {
     position: absolute;
-    width: 430px;
-    height: 450px;
+    width: 410px;
+    height: 430px;
     right: 0px;
     margin-top: 50px;
 
