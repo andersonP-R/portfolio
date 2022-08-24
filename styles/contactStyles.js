@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Colors } from "./GlobalStyles";
 
 export const ContactWrapper = styled.div`
+  position: relative;
   max-width: 1200px;
   height: 100vh;
   margin: 0px auto;
@@ -10,11 +11,38 @@ export const ContactWrapper = styled.div`
   justify-content: center;
   padding-top: 80px;
   margin-bottom: 30px;
+  overflow: hidden;
+
+  /* MEDIA QUERY */
+  @media screen and (max-width: 750px) {
+    margin-bottom: 0px;
+    border: none;
+    height: 90vh;
+  }
 
   .buzon-container {
-    position: relative;
-    width: 510px;
+    position: absolute;
+    width: 500px;
     height: 500px;
+    left: 0px;
+
+    /* MEDIA QUERY */
+    @media screen and (max-width: 1050px) {
+      left: -140px;
+    }
+
+    @media screen and (max-width: 750px) {
+      width: 600px;
+      height: 650px;
+      left: -240px;
+      opacity: 0.5;
+    }
+
+    @media screen and (max-width: 600px) {
+      height: 650px;
+      left: -250px;
+      opacity: 0.2;
+    }
   }
 
   .form-container {
@@ -24,20 +52,31 @@ export const ContactWrapper = styled.div`
     justify-content: center;
     margin-bottom: 60px;
     gap: 20px;
-    width: 40%;
+    width: 50%;
+
+    /* MEDIA QUERY */
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
 
     .contact-title {
       color: ${Colors["white-color"]}f2;
       text-transform: capitalize;
       font-size: 50px;
+      text-align: center;
+
+      /* MEDIA QUERY */
+      @media screen and (max-width: 750px) {
+        font-size: 40px;
+      }
     }
 
     .contact-decrip {
-      color: ${Colors["gray-color"]};
-
+      width: 70%;
       text-align: center;
       font-size: 16px;
       line-height: 24px;
+      color: ${Colors["gray-color"]};
     }
 
     a {
@@ -57,9 +96,31 @@ export const ContactWrapper = styled.div`
   }
 
   .plane-container {
-    position: relative;
-    width: 450px;
+    position: absolute;
+    width: 430px;
     height: 450px;
+    right: 0px;
     margin-top: 50px;
+
+    /* MEDIA QUERY */
+    @media screen and (max-width: 1050px) {
+      right: -140px;
+    }
+
+    @media screen and (max-width: 750px) {
+      width: 230px;
+      height: 250px;
+      top: 200px;
+      right: -20px;
+      opacity: 0.5;
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 130px;
+      height: 150px;
+      top: 450px;
+      right: -20px;
+      opacity: 1;
+    }
   }
 `;
