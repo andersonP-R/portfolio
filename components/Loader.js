@@ -21,13 +21,19 @@ export const Loader = (props) => {
     });
     tl.to(box2.current, { opacity: 1, duration: 0.2, ease: "expo" });
     tl.to(box3.current, { opacity: 1, duration: 0.3, ease: "expo" });
-    tl.to(letterA.current, { opacity: 1, delay: 0.5, duration: 1 });
+    tl.to(letterA.current, {
+      opacity: 1,
+      delay: 0.5,
+      duration: 1,
+      ease: "expo",
+    });
     tl.to(
       letterR.current,
       {
         opacity: 1,
         duration: 1,
-        ease: "back",
+        ease: "expo",
+        x: 200,
       },
       "<"
     );
@@ -58,7 +64,6 @@ export const Loader = (props) => {
             strokeMiterlimit: 4,
             fill: "none",
             fillRule: "nonzero",
-            // opacity: 1,
           }}
           vectorEffect="non-scaling-stroke"
           transform="matrix(.98 0 0 .98 155.5 77.32)"
@@ -78,7 +83,6 @@ export const Loader = (props) => {
             strokeMiterlimit: 4,
             fill: "none",
             fillRule: "nonzero",
-            // opacity: 1,
           }}
           vectorEffect="non-scaling-stroke"
           transform="matrix(1.49 0 0 1.49 91.93 224.64)"
@@ -98,7 +102,6 @@ export const Loader = (props) => {
             strokeMiterlimit: 4,
             fill: "none",
             fillRule: "nonzero",
-            // opacity: 1,
           }}
           vectorEffect="non-scaling-stroke"
           transform="matrix(.59 0 0 .59 227.56 163.24)"
@@ -110,7 +113,6 @@ export const Loader = (props) => {
             className={Styles.letterA}
             ref={letterA}
             xmlSpace="preserve"
-            fontFamily="Crimson Text"
             fontSize={192}
             fontWeight={200}
             letterSpacing={0.384}
@@ -124,7 +126,6 @@ export const Loader = (props) => {
               strokeMiterlimit: 4,
               fill: "#fff",
               fillRule: "nonzero",
-              // opacity: 1,
               whiteSpace: "pre",
             }}
             transform="translate(163.85 126.22)"
@@ -139,7 +140,6 @@ export const Loader = (props) => {
             className={Styles.letterR}
             ref={letterR}
             xmlSpace="preserve"
-            fontFamily="Crimson Text"
             fontSize={92}
             fontWeight={200}
             letterSpacing={0.184}
@@ -153,7 +153,6 @@ export const Loader = (props) => {
               strokeMiterlimit: 4,
               fill: "#000",
               fillRule: "nonzero",
-              // opacity: 1,
               whiteSpace: "pre",
             }}
             transform="translate(204.85 121.82)"
