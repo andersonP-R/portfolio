@@ -76,13 +76,19 @@ export const Experience = () => {
                     src={`/images/${work.picture}`}
                     layout="fill"
                     objectFit="cover"
+                    alt=""
                   />
                 </div>
                 <div className="work-card__work-info">
                   <h2 className="work-card__title">{work.title}</h2>
                   <p className="work-card__descrip">{work.decrip}</p>
                   <p className="work-card__technologies">{work.technologies}</p>
-                  <a className="work-card__url" href={work.url} target="_blank">
+                  <a
+                    className="work-card__url"
+                    href={work.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Check it out
                     <FaLink />
                   </a>

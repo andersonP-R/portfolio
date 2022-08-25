@@ -18,7 +18,7 @@ export const Contact = () => {
           transition={{ delay: 0.3, duration: 0.4, type: "tween" }}
         >
           <div className="buzon-container">
-            <Image src="/images/buzon-6.png" layout="fill" />
+            <Image src="/images/buzon-6.png" layout="fill" alt="buzon" />
           </div>
           <div className="form-container">
             <h1 className="contact-title">Get in touch</h1>
@@ -35,7 +35,7 @@ export const Contact = () => {
             </a>
           </div>
           <div className="plane-container">
-            <Image src="/images/plane.png" layout="fill" />
+            <Image src="/images/plane.png" layout="fill" alt="plane" />
           </div>
         </motion.div>
       </ContactWrapper>

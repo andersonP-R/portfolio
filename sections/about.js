@@ -17,7 +17,7 @@ export const About = () => {
           transition={{ delay: 0.3, duration: 0.4, type: "tween" }}
         >
           <div className="img-container">
-            <Image src="/images/person-sillh.png" layout="fill" />
+            <Image src="/images/person-sillh.png" layout="fill" alt="person" />
           </div>
 
           <div className="description">
@@ -37,7 +37,7 @@ export const About = () => {
             </p>
 
             <div className="table-container">
-              <Image src="/images/board-2.png" layout="fill" />
+              <Image src="/images/board-2.png" layout="fill" alt="board" />
             </div>
           </div>
         </motion.div>

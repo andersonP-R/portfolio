@@ -61,7 +61,7 @@ export const Hero = () => {
             variants={heroImgVariants}
             transition={{ delay: 1.2, duration: 0.2, type: "tween" }}
           >
-            <Image src="/images/image-removebg.png" layout="fill" />
+            <Image src="/images/image-removebg.png" layout="fill" alt="" />
           </motion.div>
           <motion.span
             className="box-1"
