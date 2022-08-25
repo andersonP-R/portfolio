@@ -1,9 +1,11 @@
+import { useState } from "react";
 import Image from "next/image";
 import styled from "styled-components";
-import { useState } from "react";
+import { motion } from "framer-motion";
 
 import { HamburguerButton } from "./HamburguerButton";
 import { Colors } from "../styles/GlobalStyles";
+import { navbarVariants } from "../utils/animationVariants";
 
 export const NavBar2 = () => {
   const [open, setOpen] = useState(false);
@@ -12,15 +14,27 @@ export const NavBar2 = () => {
   };
   return (
     <NavContainer>
-      <div className="nav-logo">
+      <motion.div
+        className="nav-logo"
+        initial="hidden"
+        animate="show"
+        variants={navbarVariants}
+        transition={{ delay: 0.3, duration: 0.2, type: "tween" }}
+      >
         <a href="/">
           <Image src="/images/icon-log.png" layout="fill" />
         </a>
-      </div>
+      </motion.div>
 
-      <div className="burguer-button">
+      <motion.div
+        className="burguer-button"
+        initial="hidden"
+        animate="show"
+        variants={navbarVariants}
+        transition={{ delay: 0.3, duration: 0.2, type: "tween" }}
+      >
         <HamburguerButton open={open} handleOpen={handleOpen} />
-      </div>
+      </motion.div>
 
       <ul className={`nav-items ${open ? "active" : ""}`}>
         <li className="item">
@@ -110,11 +124,11 @@ const NavContainer = styled.nav`
 
       @media screen and (max-width: 600px) {
         font-size: 80px;
-        margin-bottom: 40px;
+        margin-bottom: 35px;
       }
 
       @media screen and (max-width: 500px) {
-        font-size: 55px;
+        font-size: 50px;
       }
     }
   }

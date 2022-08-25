@@ -4,6 +4,7 @@ import { Colors } from "./GlobalStyles";
 export const HeroWrapper = styled.div`
   width: 100%;
   max-width: 1200px;
+  min-height: 600px;
   height: 100vh;
   margin: 0px auto;
   padding-top: 50px;
@@ -119,11 +120,9 @@ export const HeroWrapper = styled.div`
 
     .img-container {
       position: absolute;
-      width: 750px;
+      width: 770px;
       height: 570px;
       right: -100px;
-      opacity: 0.5;
-      transition: 0.3s ease;
 
       @media screen and (max-width: 960px) {
         width: 650px;
@@ -143,6 +142,7 @@ export const HeroWrapper = styled.div`
         width: 550px;
         height: 370px;
         left: 50px;
+        opacity: 0;
       }
     }
 

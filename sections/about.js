@@ -1,17 +1,21 @@
 import Image from "next/image";
-import {
-  Description,
-  ImgContainer,
-  TableCont,
-  Wrapper,
-} from "../styles/aboutStyles";
+import { Wrapper } from "../styles/aboutStyles";
 import { MainContainer } from "../styles/GlobalStyles";
+import { motion } from "framer-motion";
+import { useScroll } from "../hooks/useScroll";
+import { sectionsVariants } from "../utils/animationVariants";
 
 export const About = () => {
+  const [element, controls] = useScroll();
   return (
     <MainContainer id="about">
-      <Wrapper>
-        <div className="img-desc-container">
+      <Wrapper ref={element}>
+        <motion.div
+          className="img-desc-container"
+          animate={controls}
+          variants={sectionsVariants}
+          transition={{ delay: 0.3, duration: 0.4, type: "tween" }}
+        >
           <div className="img-container">
             <Image src="/images/person-sillh.png" layout="fill" />
           </div>
@@ -36,7 +40,7 @@ export const About = () => {
               <Image src="/images/board-2.png" layout="fill" />
             </div>
           </div>
-        </div>
+        </motion.div>
       </Wrapper>
     </MainContainer>
   );

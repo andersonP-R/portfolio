@@ -1,11 +1,10 @@
 import React from "react";
-import {
-  SkillBox,
-  SkillsContainer,
-  SkillsWrapper,
-} from "../styles/skillsStyles";
+import { SkillsWrapper } from "../styles/skillsStyles";
 import Image from "next/image";
 import { MainContainer } from "../styles/GlobalStyles";
+import { motion } from "framer-motion";
+import { useScroll } from "../hooks/useScroll";
+import { sectionsVariants } from "../utils/animationVariants";
 
 const skills = [
   {
@@ -47,24 +46,32 @@ const skills = [
 ];
 
 export const Skills = () => {
+  const [element, controls] = useScroll();
+
   return (
     <MainContainer id="skills">
-      <SkillsWrapper>
-        <h1>Skillset</h1>
-        <div className="skill-box">
-          {skills.map((skill) => (
-            <div key={skill.id} className="skill-card">
-              <div className="skill-card__img-container">
-                <Image
-                  src={`/images/${skill.picture}`}
-                  layout="fill"
-                  alt={skill.alt}
-                />
+      <SkillsWrapper ref={element}>
+        <motion.div
+          animate={controls}
+          variants={sectionsVariants}
+          transition={{ delay: 0.3, duration: 0.4, type: "tween" }}
+        >
+          <h1 className="title">Skillset</h1>
+          <div className="skill-box">
+            {skills.map((skill) => (
+              <div key={skill.id} className="skill-card">
+                <div className="skill-card__img-container">
+                  <Image
+                    src={`/images/${skill.picture}`}
+                    layout="fill"
+                    alt={skill.alt}
+                  />
+                </div>
+                <h2 className="skill-card__title">{skill.title}</h2>
               </div>
-              <h2 className="skill-card__title">{skill.title}</h2>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </motion.div>
       </SkillsWrapper>
     </MainContainer>
   );

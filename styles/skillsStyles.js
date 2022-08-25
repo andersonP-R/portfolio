@@ -13,17 +13,18 @@ export const SkillsWrapper = styled.div`
   margin-bottom: 100px;
 
   @media screen and (max-width: 750px) {
+    padding-top: 60px;
     margin-bottom: 0px;
   }
 
-  h1 {
+  .title {
     margin-top: 90px;
     position: absolute;
     width: 300px;
     height: 500px;
     border: 1px solid ${Colors["red-color"]};
     color: ${Colors["white-color"]}f2;
-    font-size: 200px;
+    font-size: 160px;
     text-transform: uppercase;
 
     @media screen and (max-width: 1000px) {
@@ -46,7 +47,7 @@ export const SkillsWrapper = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    margin-top: 340px;
+    margin-top: 310px;
     z-index: 10;
 
     @media screen and (max-width: 1000px) {
@@ -54,7 +55,7 @@ export const SkillsWrapper = styled.div`
     }
 
     @media screen and (max-width: 580px) {
-      margin-top: 200px;
+      margin-top: 180px;
     }
 
     .skill-card {
