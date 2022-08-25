@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
 import styled from "styled-components";
@@ -21,9 +22,11 @@ export const NavBar2 = () => {
         variants={navbarVariants}
         transition={{ delay: 0.3, duration: 0.2, type: "tween" }}
       >
-        <a href="/">
-          <Image src="/images/icon-log.png" layout="fill" />
-        </a>
+        <Link href="/">
+          <a className="log">
+            <Image src="/images/icon-log.png" layout="fill" alt="logo" />
+          </a>
+        </Link>
       </motion.div>
 
       <motion.div
@@ -84,7 +87,7 @@ const NavContainer = styled.nav`
     height: 80px;
     transition: 0.2s ease;
 
-    a {
+    .log {
       display: block;
       width: 100%;
       height: 100%;

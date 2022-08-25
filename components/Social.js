@@ -23,13 +23,25 @@ export const Social = () => {
         variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}
         transition={{ delay: 1.8, duration: 0.2, type: "tween" }}
       >
-        <a href="https://github.com/andersonP-R" target="_blank">
+        <a
+          href="https://github.com/andersonP-R"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaGithub />
         </a>
-        <a href="https://www.linkedin.com/in/andersonp-r/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/andersonp-r/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaLinkedinIn />
         </a>
-        <a href="https://www.instagram.com/legalmenterivera/" target="_blank">
+        <a
+          href="https://www.instagram.com/legalmenterivera/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaInstagram />
         </a>
       </motion.div>
