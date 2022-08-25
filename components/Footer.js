@@ -13,13 +13,25 @@ export const Footer = () => {
     <FooterContainer>
       <FooterWrapper>
         <div className="social-container">
-          <a href="https://github.com/andersonP-R" target="_blank">
+          <a
+            href="https://github.com/andersonP-R"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaGithub />
           </a>
-          <a href="https://www.linkedin.com/in/andersonp-r/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/andersonp-r/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedinIn />
           </a>
-          <a href="https://www.instagram.com/legalmenterivera/" target="_blank">
+          <a
+            href="https://www.instagram.com/legalmenterivera/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaInstagram />
           </a>
         </div>
