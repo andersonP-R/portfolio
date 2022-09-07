@@ -83,8 +83,8 @@ const NavContainer = styled.nav`
 
   .nav-logo {
     position: relative;
-    width: 90px;
-    height: 80px;
+    width: 80px;
+    height: 70px;
     transition: 0.2s ease;
 
     .log {

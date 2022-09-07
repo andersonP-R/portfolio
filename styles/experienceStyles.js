@@ -21,7 +21,7 @@ export const Wrapper = styled.div`
   }
 
   @media screen and (max-width: 500px) {
-    padding-top: 50px;
+    padding-top: 100px;
   }
 
   .title-container {
@@ -29,7 +29,8 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 130px;
+    height: auto;
+    margin-bottom: 30px;
 
     /* MEDIA QUERY */
     @media screen and (max-width: 1115px) {
@@ -41,7 +42,8 @@ export const Wrapper = styled.div`
     }
 
     @media screen and (max-width: 500px) {
-      height: 70px;
+      margin-bottom: 0px;
+      height: auto;
     }
 
     .t-1 {
@@ -71,8 +73,8 @@ export const Wrapper = styled.div`
       }
 
       @media screen and (max-width: 500px) {
-        font-size: 40px;
-        height: 50px;
+        font-size: 30px;
+        height: 35px;
       }
     }
 
@@ -96,8 +98,8 @@ export const Wrapper = styled.div`
       }
 
       @media screen and (max-width: 500px) {
-        font-size: 16px;
-        line-height: 14px;
+        font-size: 14px;
+        line-height: 12px;
       }
     }
 
@@ -121,7 +123,7 @@ export const Wrapper = styled.div`
       }
 
       @media screen and (max-width: 500px) {
-        font-size: 40px;
+        font-size: 30px;
       }
     }
   }
@@ -135,20 +137,11 @@ export const Wrapper = styled.div`
 
     /* MEDIA QUERY */
     @media screen and (max-width: 810px) {
-      max-width: 500px;
-      height: 550px;
+      max-width: 100%;
+      height: 500px;
       flex-direction: column;
-
       overflow-x: scroll;
       scroll-snap-type: x mandatory;
-    }
-
-    @media screen and (max-width: 810px) {
-      max-width: 350px;
-    }
-
-    @media screen and (max-width: 500px) {
-      max-width: 320px;
     }
 
     .work-card {
@@ -157,10 +150,7 @@ export const Wrapper = styled.div`
       margin: 20px;
       background: rgba(29, 30, 34, 0.27);
       border-radius: 16px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(3.1px);
-      -webkit-backdrop-filter: blur(3.1px);
-      border: 1px solid ${Colors["gray-color"]};
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
       overflow: hidden;
       transition: 0.3s ease-out;
 
@@ -169,14 +159,9 @@ export const Wrapper = styled.div`
         scroll-snap-align: center;
       }
 
-      @media screen and (max-width: 810px) {
-        width: 320px;
-        border-color: ${Colors["blue-color"]};
-      }
-
       @media screen and (max-width: 500px) {
-        width: 300px;
-        height: 600px;
+        width: 90%;
+        height: 410px;
       }
 
       .work-card__img-container {
@@ -188,6 +173,7 @@ export const Wrapper = styled.div`
 
         /* MEDIA QUERY */
         @media screen and (max-width: 810px) {
+          height: 140px;
           opacity: 1;
         }
       }
@@ -211,12 +197,14 @@ export const Wrapper = styled.div`
 
           /* MEDIA QUERY */
           @media screen and (max-width: 810px) {
+            font-size: 22px;
             color: ${Colors["blue-color"]};
           }
         }
 
         .work-card__descrip {
           font-size: 16px;
+          line-height: 20px;
           color: ${Colors["gray-color"]};
           margin-bottom: 8px;
         }
@@ -243,18 +231,10 @@ export const Wrapper = styled.div`
             margin-left: 6px;
             font-size: 10px;
           }
-
-          /* MEDIA QUERY */
-          @media screen and (max-width: 810px) {
-            color: ${Colors["blue-color"]}a6;
-          }
         }
       }
 
       &:hover {
-        border-color: ${Colors["blue-color"]};
-        z-index: 10;
-
         .work-card__img-container {
           opacity: 1;
         }

@@ -6,9 +6,7 @@ export const ContactWrapper = styled.div`
   max-width: 1200px;
   height: 100vh;
   margin: 0px auto;
-
   margin-bottom: 30px;
-  overflow: hidden;
 
   .main-container {
     position: relative;
@@ -16,15 +14,9 @@ export const ContactWrapper = styled.div`
     display: flex;
     justify-content: center;
     padding-top: 80px;
+    overflow: hidden;
 
     border: 1px solid ${Colors["white-color"]};
-
-    /* MEDIA QUERY */
-    @media screen and (max-width: 750px) {
-      margin-bottom: 0px;
-      border: none;
-      height: 90vh;
-    }
 
     .buzon-container {
       position: absolute;
@@ -73,7 +65,7 @@ export const ContactWrapper = styled.div`
 
         /* MEDIA QUERY */
         @media screen and (max-width: 750px) {
-          font-size: 40px;
+          font-size: 38px;
         }
       }
 
@@ -89,11 +81,12 @@ export const ContactWrapper = styled.div`
         text-decoration: none;
         border: 1px solid ${Colors["gray-color"]};
         padding: 15px;
-        font-size: 18px;
+        font-size: 16px;
         color: ${Colors["gray-color"]};
         border-radius: 5px;
         margin-top: 20px;
         transition: 0.3s ease;
+        z-index: 10;
 
         &:hover {
           background: ${Colors["gray-color"]}1a;
@@ -128,6 +121,13 @@ export const ContactWrapper = styled.div`
         right: -20px;
         opacity: 1;
       }
+    }
+
+    /* MEDIA QUERY */
+    @media screen and (max-width: 750px) {
+      margin-bottom: 0px;
+      border: none;
+      height: 90vh;
     }
   }
 `;

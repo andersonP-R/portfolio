@@ -18,7 +18,7 @@ export const HamburguerButton = ({ open, handleOpen }) => {
 
 const Burguer = styled.div`
   .nav-icon-5 {
-    width: 35px;
+    width: 32px;
     height: 30px;
     margin: 10px 10px;
     position: relative;

@@ -80,7 +80,8 @@ export const HeroWrapper = styled.div`
         }
 
         @media screen and (max-width: 500px) {
-          font-size: 30px;
+          font-size: 27px;
+          margin-bottom: 5px;
         }
       }
 
@@ -94,7 +95,7 @@ export const HeroWrapper = styled.div`
         @media screen and (max-width: 500px) {
           font-size: 16px;
           line-height: 22px;
-          width: 80%;
+          width: 90%;
         }
       }
 
@@ -120,7 +121,7 @@ export const HeroWrapper = styled.div`
 
     .img-container {
       position: absolute;
-      width: 770px;
+      width: 800px;
       height: 570px;
       right: -100px;
 

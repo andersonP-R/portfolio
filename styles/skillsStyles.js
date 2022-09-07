@@ -67,7 +67,7 @@ export const SkillsWrapper = styled.div`
       }
 
       @media screen and (max-width: 400px) {
-        width: 100px;
+        width: 20%;
         margin: 20px 30px;
       }
 
@@ -81,7 +81,7 @@ export const SkillsWrapper = styled.div`
         }
 
         @media screen and (max-width: 400px) {
-          height: 100px;
+          height: 70px;
         }
       }
 
@@ -92,7 +92,7 @@ export const SkillsWrapper = styled.div`
         color: ${Colors["gray-color"]};
 
         @media screen and (max-width: 580px) {
-          font-size: 18px;
+          font-size: 16px;
         }
       }
     }
