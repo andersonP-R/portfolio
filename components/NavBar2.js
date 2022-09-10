@@ -13,6 +13,10 @@ export const NavBar2 = () => {
   const handleOpen = () => {
     setOpen(!open);
   };
+
+  const redirect = (e) => {
+    location.reload();
+  };
   return (
     <NavContainer>
       <motion.div
@@ -23,7 +27,7 @@ export const NavBar2 = () => {
         transition={{ delay: 0.3, duration: 0.2, type: "tween" }}
       >
         <Link href="/">
-          <a className="log">
+          <a className="log" onClick={redirect}>
             <Image src="/images/icon-log.png" layout="fill" alt="logo" />
           </a>
         </Link>
