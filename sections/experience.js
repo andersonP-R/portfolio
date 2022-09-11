@@ -11,8 +11,8 @@ const works = [
     id: 1,
     name: "blog",
     decrip:
-      "Blog created with React. Application made with React that checks the weather of a city in real time. This is a custom text and it contains a lot of words ",
-    picture: "blog-img-4.jpg",
+      "Blog created with React. This is a custom text and it contains a lot of words ",
+    picture: "blog.jpg",
     technologies: "react style-components heroku",
     title: "Blog",
     url: "https://larivera.netlify.app",

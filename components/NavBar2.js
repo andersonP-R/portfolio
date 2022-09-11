@@ -84,6 +84,7 @@ const NavContainer = styled.nav`
   align-items: center;
   justify-content: space-between;
   padding: 0px 22px;
+  background-color: ${Colors["black-color"]}66;
 
   .nav-logo {
     position: relative;

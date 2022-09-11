@@ -21,7 +21,7 @@ export const Wrapper = styled.div`
   }
 
   @media screen and (max-width: 500px) {
-    padding-top: 100px;
+    padding-top: 50px;
   }
 
   .title-container {
@@ -44,6 +44,7 @@ export const Wrapper = styled.div`
     @media screen and (max-width: 500px) {
       margin-bottom: 0px;
       height: auto;
+      /* margin-bottom: -20px; */
     }
 
     .t-1 {
@@ -73,8 +74,9 @@ export const Wrapper = styled.div`
       }
 
       @media screen and (max-width: 500px) {
-        font-size: 30px;
-        height: 35px;
+        padding: 5px;
+        font-size: 38px;
+        height: 40px;
       }
     }
 
@@ -89,7 +91,6 @@ export const Wrapper = styled.div`
 
       /* MEDIA QUERY */
       @media screen and (max-width: 1290px) {
-        padding: 30px 5px;
         font-size: 28px;
       }
 
@@ -98,8 +99,8 @@ export const Wrapper = styled.div`
       }
 
       @media screen and (max-width: 500px) {
-        font-size: 14px;
-        line-height: 12px;
+        font-size: 16px;
+        line-height: 16px;
       }
     }
 
@@ -123,7 +124,7 @@ export const Wrapper = styled.div`
       }
 
       @media screen and (max-width: 500px) {
-        font-size: 30px;
+        font-size: 38px;
       }
     }
   }
@@ -148,7 +149,7 @@ export const Wrapper = styled.div`
       width: 450px;
       height: 500px;
       margin: 20px;
-      background: rgba(29, 30, 34, 0.27);
+      /* background: rgba(29, 30, 34, 0.27); */
       border-radius: 16px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
       overflow: hidden;

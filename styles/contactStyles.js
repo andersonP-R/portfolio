@@ -127,7 +127,7 @@ export const ContactWrapper = styled.div`
     @media screen and (max-width: 750px) {
       margin-bottom: 0px;
       border: none;
-      height: 90vh;
+      height: 750px;
     }
   }
 `;

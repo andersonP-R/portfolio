@@ -67,7 +67,7 @@ export const Loader = (props) => {
           }}
           vectorEffect="non-scaling-stroke"
           transform="matrix(.98 0 0 .98 155.5 77.32)"
-          d="M-37.81-37.81h75.62v75.62h-75.62z"
+          d="M-32.81-20.81h65.62v65.62h-65.62z"
           strokeLinecap="round"
         />
         <path
@@ -86,7 +86,7 @@ export const Loader = (props) => {
           }}
           vectorEffect="non-scaling-stroke"
           transform="matrix(1.49 0 0 1.49 91.93 224.64)"
-          d="M-37.81-37.81h75.62v75.62h-75.62z"
+          d="M-32.81-37.81h65.62v65.62h-65.62z"
           strokeLinecap="round"
         />
         <path
@@ -95,17 +95,11 @@ export const Loader = (props) => {
           style={{
             stroke: "#0062ae",
             strokeWidth: 1,
-            strokeDasharray: "none",
-            strokeLinecap: "butt",
-            strokeDashoffset: 0,
-            strokeLinejoin: "miter",
-            strokeMiterlimit: 4,
             fill: "none",
-            fillRule: "nonzero",
           }}
           vectorEffect="non-scaling-stroke"
           transform="matrix(.59 0 0 .59 227.56 163.24)"
-          d="M-37.81-37.81h75.62v75.62h-75.62z"
+          d="M-47.81-27.81h65.62v65.62h-65.62z"
           strokeLinecap="round"
         />
         <g>
@@ -113,7 +107,7 @@ export const Loader = (props) => {
             className={Styles.letterA}
             ref={letterA}
             xmlSpace="preserve"
-            fontSize={192}
+            fontSize={182}
             fontWeight={200}
             letterSpacing={0.384}
             style={{
@@ -140,7 +134,7 @@ export const Loader = (props) => {
             className={Styles.letterR}
             ref={letterR}
             xmlSpace="preserve"
-            fontSize={92}
+            fontSize={82}
             fontWeight={200}
             letterSpacing={0.184}
             style={{
@@ -157,7 +151,7 @@ export const Loader = (props) => {
             }}
             transform="translate(204.85 121.82)"
           >
-            <tspan x={-35.5} y={36.88} className={Styles.letter}>
+            <tspan x={-35.5} y={42.88} className={Styles.letter}>
               {"R"}
             </tspan>
           </text>
