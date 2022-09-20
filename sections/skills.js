@@ -10,13 +10,13 @@ const skills = [
   {
     id: 1,
     picture: "html5.png",
-    title: "HTML",
+    title: "HTML5",
     alt: "html5",
   },
   {
     id: 2,
     picture: "css-logo.png",
-    title: "CSS",
+    title: "CSS3",
     alt: "css3",
   },
   {
@@ -28,7 +28,7 @@ const skills = [
   {
     id: 4,
     picture: "react.png",
-    title: "React JS",
+    title: "ReactJS",
     alt: "react js",
   },
   {
@@ -42,6 +42,30 @@ const skills = [
     picture: "bootstrap2.jpg",
     title: "Bootstrap",
     alt: "bootstrap",
+  },
+  {
+    id: 7,
+    picture: "node3.png",
+    title: "NodeJS",
+    alt: "nodejs",
+  },
+  {
+    id: 8,
+    picture: "express2.png",
+    title: "ExpressJS",
+    alt: "express",
+  },
+  {
+    id: 9,
+    picture: "mongo.png",
+    title: "MongoDB",
+    alt: "mongodb",
+  },
+  {
+    id: 10,
+    picture: "python.png",
+    title: "Python",
+    alt: "python",
   },
 ];
 
