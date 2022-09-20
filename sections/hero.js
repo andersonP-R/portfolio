@@ -54,7 +54,7 @@ export const Hero = () => {
               Let's start
             </motion.a>
           </div>
-          <motion.div
+          {/* <motion.div
             className="img-container"
             initial="hidden"
             animate="show"
@@ -69,7 +69,7 @@ export const Hero = () => {
             animate="show"
             variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}
             transition={{ delay: 1.8, duration: 0.2, type: "tween" }}
-          ></motion.span>
+          ></motion.span> */}
         </div>
       </HeroWrapper>
     </MainContainer>

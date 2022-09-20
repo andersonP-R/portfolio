@@ -47,7 +47,7 @@ export const SkillsWrapper = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    margin-top: 310px;
+    margin-top: 300px;
     z-index: 10;
 
     @media screen and (max-width: 1000px) {
@@ -60,7 +60,9 @@ export const SkillsWrapper = styled.div`
 
     .skill-card {
       width: 155px;
+      height: auto;
       margin: 18px 18px;
+      z-index: 10;
 
       @media screen and (max-width: 580px) {
         width: 140px;
