@@ -193,6 +193,7 @@ export const Wrapper = styled.div`
 
         .work-card__title {
           font-size: 25px;
+          text-transform: capitalize;
           color: ${Colors["white-color"]};
           transition: color 0.3s ease-out;
 

@@ -9,23 +9,23 @@ import { motion } from "framer-motion";
 const works = [
   {
     id: 1,
-    name: "blog",
+    name: "Weather app",
     decrip:
-      "Blog created with React. This is a custom text and it contains a lot of words ",
-    picture: "blog.jpg",
-    technologies: "react style-components heroku",
-    title: "Blog",
-    url: "https://larivera.netlify.app",
+      "Application made with React that checks the weather of a city in real time.",
+    picture: "weather.JPG",
+    technologies: "react - css-module - netlify -  weather api",
+    title: "weather",
+    url: "https://wheaterprojectapp.netlify.app/",
   },
   {
     id: 2,
-    name: "work2",
+    name: "Blog",
     decrip:
-      "Application made with React that checks the weather of a city in real time. This is a custom text and it contains a lot of words",
-    technologies: "react style-components heroku wheater api",
-    picture: "dolly.jpg",
-    title: "Wheater app",
-    url: "https://google.com",
+      "Blog created with React. This is a custom text and it contains a lot of words ",
+    technologies: "react - style-components - netlify",
+    picture: "blog.JPG",
+    title: "blog",
+    url: "https://larivera.netlify.app",
   },
   {
     id: 3,
