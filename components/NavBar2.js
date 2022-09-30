@@ -15,6 +15,7 @@ export const NavBar2 = () => {
   };
 
   const redirect = (e) => {
+    e.preventDefault();
     location.reload();
   };
   return (
