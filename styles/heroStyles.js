@@ -30,6 +30,10 @@ export const HeroWrapper = styled.div`
       gap: 6px;
       z-index: 10;
 
+      @media screen and (max-width: 750px) {
+        background-color: ${Colors["black-color"]}cc;
+      }
+
       h1 {
         color: ${Colors["blue-color"]};
         font-size: 20px;
@@ -119,31 +123,23 @@ export const HeroWrapper = styled.div`
       }
     }
 
-    .img-container {
+    .animation {
       position: absolute;
-      width: 800px;
-      height: 570px;
-      right: -100px;
+      width: auto;
+      height: auto;
+      right: -70px;
+      top: -20px;
 
-      @media screen and (max-width: 960px) {
-        width: 650px;
-        height: 470px;
-        right: -150px;
+      @media screen and (max-width: 1250px) {
+        opacity: 0.5;
+        top: 60px;
+        right: -200px;
       }
 
-      @media screen and (max-width: 750px) {
-        left: 250px;
-      }
-
-      @media screen and (max-width: 600px) {
-        left: 160px;
-      }
-
-      @media screen and (max-width: 500px) {
-        width: 550px;
-        height: 370px;
-        left: 50px;
-        opacity: 0;
+      @media screen and (max-width: 1000px) {
+        opacity: 0.3;
+        top: 100px;
+        right: -400px;
       }
     }
 

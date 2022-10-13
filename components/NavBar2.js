@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { HamburguerButton } from "./HamburguerButton";
 import { Colors } from "../styles/GlobalStyles";
 import { navbarVariants } from "../utils/animationVariants";
+import { NavBgAnimation } from "./NavBgAnimation";
 
 export const NavBar2 = () => {
   const [open, setOpen] = useState(false);
@@ -70,6 +71,7 @@ export const NavBar2 = () => {
             Contact
           </a>
         </li>
+        <NavBgAnimation state={open} />
       </ul>
       <BgDiv className={`initial ${open ? " active" : ""}`} />
     </NavContainer>
@@ -112,6 +114,7 @@ const NavContainer = styled.nav`
     left: -100%;
     padding: 20px;
     list-style: none;
+
     background-color: ${Colors["black-color"]};
     transition: all 0.3s ease;
 
@@ -119,6 +122,7 @@ const NavContainer = styled.nav`
       font-size: 100px;
       width: 100%;
       margin-bottom: 8px;
+      z-index: 20;
 
       a {
         text-decoration: none;
@@ -150,7 +154,7 @@ const NavContainer = styled.nav`
     background-color: ${Colors["black-color"]}cc;
     border-radius: 50%;
     overflow: hidden;
-    z-index: 999;
+    z-index: 40;
   }
 
   @media screen and (max-width: 500px) {

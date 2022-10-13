@@ -1,8 +1,8 @@
-import Image from "next/image";
 import { MainContainer } from "../styles/GlobalStyles";
 import { HeroWrapper } from "../styles/heroStyles";
 import { motion } from "framer-motion";
-import { heroImgVariants, heroVariants } from "../utils/animationVariants";
+import { heroVariants } from "../utils/animationVariants";
+import { Svg } from "../components/Svg";
 
 export const Hero = () => {
   return (
@@ -54,22 +54,9 @@ export const Hero = () => {
               Let's start
             </motion.a>
           </div>
-          {/* <motion.div
-            className="img-container"
-            initial="hidden"
-            animate="show"
-            variants={heroImgVariants}
-            transition={{ delay: 1.2, duration: 0.2, type: "tween" }}
-          >
-            <Image src="/images/image-removebg.png" layout="fill" alt="" />
-          </motion.div>
-          <motion.span
-            className="box-1"
-            initial="hidden"
-            animate="show"
-            variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}
-            transition={{ delay: 1.8, duration: 0.2, type: "tween" }}
-          ></motion.span> */}
+          <div className="animation">
+            <Svg />
+          </div>
         </div>
       </HeroWrapper>
     </MainContainer>
