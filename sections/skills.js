@@ -91,7 +91,7 @@ export const Skills = () => {
                     alt={skill.alt}
                   />
                 </div>
-                <h2 className="skill-card__title">{skill.title}</h2>
+                <h3 className="skill-card__title">{skill.title}</h3>
               </div>
             ))}
           </div>

@@ -23,7 +23,7 @@ export const Wrapper = styled.div`
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
 
     .img-container {
       position: relative;
@@ -37,7 +37,7 @@ export const Wrapper = styled.div`
       @media screen and (max-width: 750px) {
         position: absolute;
         left: -120px;
-        bottom: 50px;
+        margin-top: 60px;
         width: 650px;
         height: 650px;
         opacity: 0.4;

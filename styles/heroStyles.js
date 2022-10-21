@@ -9,6 +9,7 @@ export const HeroWrapper = styled.div`
   margin: 0px auto;
   padding-top: 50px;
   margin-bottom: 120px;
+  overflow: hidden;
 
   @media screen and (max-width: 750px) {
     margin-bottom: 0px;
@@ -136,8 +137,8 @@ export const HeroWrapper = styled.div`
       }
 
       @media screen and (max-width: 1000px) {
-        top: 120px;
-        right: -320px;
+        top: 80px;
+        right: -330px;
       }
     }
   }
