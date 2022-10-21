@@ -23,12 +23,12 @@ export const Wrapper = styled.div`
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 
     .img-container {
       position: relative;
       width: 600px;
-      height: 650px;
+      height: 580px;
 
       @media screen and (max-width: 1000px) {
         height: 500px;
@@ -37,9 +37,10 @@ export const Wrapper = styled.div`
       @media screen and (max-width: 750px) {
         position: absolute;
         left: -120px;
+        bottom: 50px;
         width: 650px;
         height: 650px;
-        opacity: 0.3;
+        opacity: 0.4;
       }
     }
 
@@ -67,7 +68,7 @@ export const Wrapper = styled.div`
           font-weight: bolder;
           text-transform: uppercase;
           color: ${Colors["white-color"]}f2;
-          font-size: 140px;
+          font-size: 130px;
 
           @media screen and (max-width: 1000px) {
             font-size: 100px;

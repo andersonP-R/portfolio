@@ -81,7 +81,7 @@ const FooterWrapper = styled.div`
       color: ${Colors["gray-color"]};
       transition: 0.2s ease;
 
-      padding-right: 15px;
+      padding-right: 24px;
 
       &:last-child {
         padding-right: 0px;
@@ -99,6 +99,7 @@ const FooterWrapper = styled.div`
     display: flex;
     align-items: center;
     text-transform: capitalize;
+    font-weight: 100;
     text-align: center;
   }
 

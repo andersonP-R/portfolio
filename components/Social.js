@@ -9,7 +9,7 @@ export const Social = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      window.pageYOffset > 3680
+      window.pageYOffset > 4000
         ? setHiddenSocial(true)
         : setHiddenSocial(false);
     });

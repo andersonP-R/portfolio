@@ -309,16 +309,7 @@ export const Svg = () => {
           transform="matrix(1.49 0 0 .83 549.5 325.19)"
           d="M-6.964-6.964H6.964V6.964H-6.964z"
         />
-        <motion.path
-          variants={pathVariants}
-          transform="translate(313.57 165.12)"
-          d="M-80.398-8.571 33.093-75.556 80.398 9.841l-111.55 65.715z"
-        />
-        <motion.path
-          variants={pathVariants}
-          transform="translate(314.61 166.39)"
-          d="m-18.248 72.381-20.967 13.016h-4.914l-2.813-3.492L-95.558-1.27v-3.492l2.223-3.81L36.823-85.396h6.474l52.16 87.62.1 3.491-106.035 61.714"
-        />
+
         <motion.path
           variants={pathVariants}
           transform="translate(171.63 380.47)"

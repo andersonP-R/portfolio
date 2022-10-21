@@ -21,7 +21,6 @@ export const HeroWrapper = styled.div`
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    overflow: hidden;
 
     .description {
       display: flex;
@@ -127,8 +126,8 @@ export const HeroWrapper = styled.div`
       position: absolute;
       width: auto;
       height: auto;
-      right: -70px;
-      top: -20px;
+      right: -50px;
+      top: -30px;
 
       @media screen and (max-width: 1250px) {
         opacity: 0.5;
@@ -137,32 +136,8 @@ export const HeroWrapper = styled.div`
       }
 
       @media screen and (max-width: 1000px) {
-        opacity: 0.3;
-        top: 100px;
-        right: -400px;
-      }
-    }
-
-    .box-1 {
-      position: absolute;
-      width: 600px;
-      height: 450px;
-      right: 0;
-      border: 1px solid ${Colors["black-gray-color"]};
-      transition: border-color 300ms ease-in-out;
-
-      &:hover {
-        border-color: ${Colors["white-color"]};
-      }
-
-      @media screen and (max-width: 960px) {
-        width: 800px;
-        height: 330px;
-        pointer-events: none;
-      }
-
-      @media screen and (max-width: 750px) {
-        display: none;
+        top: 120px;
+        right: -320px;
       }
     }
   }

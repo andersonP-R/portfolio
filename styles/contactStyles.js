@@ -14,7 +14,6 @@ export const ContactWrapper = styled.div`
     display: flex;
     justify-content: center;
     padding-top: 80px;
-    overflow: hidden;
 
     border: 1px solid ${Colors["white-color"]};
 
@@ -39,7 +38,7 @@ export const ContactWrapper = styled.div`
       @media screen and (max-width: 600px) {
         height: 650px;
         left: -250px;
-        opacity: 0.2;
+        opacity: 0.3;
       }
     }
 
@@ -79,17 +78,19 @@ export const ContactWrapper = styled.div`
 
       a {
         text-decoration: none;
-        border: 1px solid ${Colors["gray-color"]};
+        border: 1px solid ${Colors["blue-color"]};
         padding: 15px;
         font-size: 16px;
-        color: ${Colors["gray-color"]};
+        color: ${Colors["white-color"]};
         border-radius: 5px;
         margin-top: 20px;
         transition: 0.3s ease;
         z-index: 10;
 
         &:hover {
-          background: ${Colors["gray-color"]}1a;
+          border-color: ${Colors["white-color"]};
+          background-color: ${Colors["blue-color"]}b3;
+          color: ${Colors["white-color"]};
         }
       }
     }
@@ -117,8 +118,8 @@ export const ContactWrapper = styled.div`
       @media screen and (max-width: 600px) {
         width: 130px;
         height: 150px;
-        top: 450px;
-        right: -20px;
+        top: 460px;
+        right: -24px;
         opacity: 1;
       }
     }

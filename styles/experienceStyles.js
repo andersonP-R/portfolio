@@ -44,7 +44,6 @@ export const Wrapper = styled.div`
     @media screen and (max-width: 500px) {
       margin-bottom: 0px;
       height: auto;
-      /* margin-bottom: -20px; */
     }
 
     .t-1 {
@@ -149,8 +148,8 @@ export const Wrapper = styled.div`
       width: 450px;
       height: 500px;
       margin: 20px;
-      /* background: rgba(29, 30, 34, 0.27); */
       border-radius: 16px;
+      border: 1px solid ${Colors["white-color"]};
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
       overflow: hidden;
       transition: 0.3s ease-out;
@@ -200,7 +199,6 @@ export const Wrapper = styled.div`
           /* MEDIA QUERY */
           @media screen and (max-width: 810px) {
             font-size: 22px;
-            color: ${Colors["blue-color"]};
           }
         }
 
