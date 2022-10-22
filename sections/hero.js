@@ -10,15 +10,15 @@ export const Hero = () => {
       <HeroWrapper>
         <div className="desc-img-container">
           <div className="description">
-            <motion.h1
+            <motion.h3 //h1
               initial="hidden"
               animate="show"
               variants={heroVariants}
               transition={{ delay: 0.9, duration: 0.2, type: "tween" }}
             >
               Hi, my name is
-            </motion.h1>
-            <motion.h2
+            </motion.h3>
+            <motion.h2 //h2
               initial="hidden"
               animate="show"
               variants={heroVariants}
@@ -26,14 +26,14 @@ export const Hero = () => {
             >
               Anderson Rivera.
             </motion.h2>
-            <motion.h3
+            <motion.h1 //h3
               initial="hidden"
               animate="show"
               variants={heroVariants}
               transition={{ delay: 1, duration: 0.2, type: "tween" }}
             >
               I'm a Front-end developer
-            </motion.h3>
+            </motion.h1>
             <motion.p
               initial="hidden"
               animate="show"

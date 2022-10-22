@@ -27,9 +27,9 @@ export const About = () => {
             </div>
 
             <p className="p-1">
-              Hello! My name is Anderson and I build things for the web. I am a
-              self-taught person who likes to create things that others can use
-              or need.
+              Hello! My name is Anderson Rivera and I build things for the web.
+              I am a self-taught person who likes to create things that others
+              can use or need.
             </p>
             <p className="p-2">
               I usually work with React, JavaScript and some Python but I'm

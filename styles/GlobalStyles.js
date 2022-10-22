@@ -9,7 +9,7 @@ export const Colors = {
   "black-gray-color": "#565668",
 };
 
-export const MainContainer = styled.section`
+export const MainContainer = styled.article`
   width: 100%;
   min-height: 100vh;
   height: auto;

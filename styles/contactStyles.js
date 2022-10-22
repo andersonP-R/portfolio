@@ -7,6 +7,7 @@ export const ContactWrapper = styled.div`
   height: 100vh;
   margin: 0px auto;
   margin-bottom: 30px;
+  overflow: hidden;
 
   .main-container {
     position: relative;

@@ -34,7 +34,7 @@ export const HeroWrapper = styled.div`
         background-color: ${Colors["black-color"]}cc;
       }
 
-      h1 {
+      h3 {
         color: ${Colors["blue-color"]};
         font-size: 20px;
         font-weight: lighter;
@@ -70,7 +70,7 @@ export const HeroWrapper = styled.div`
         }
       }
 
-      h3 {
+      h1 {
         color: ${Colors["gray-color"]};
         font-size: 40px;
         margin-bottom: 15px;
