@@ -1,8 +1,8 @@
-import Head from "next/head";
 import { useEffect, useState } from "react";
 import { Footer } from "../components/Footer";
 import { Loader } from "../components/Loader";
 import { NavBar2 } from "../components/NavBar2";
+import { SEO } from "../components/SEO";
 import { Social } from "../components/Social";
 import { About } from "../sections/about";
 import { Contact } from "../sections/contact";
@@ -21,23 +21,7 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Anderson Rivera</title>
-        <meta
-          name="description"
-          content="Anderson Rivera is a software developer specialized in front-end development"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="copyright" content="andersonpr.co" />
-        <meta name="author" content="Anderson Rivera" />
-        <meta name="audience" content="all" />
-        <meta name="keywords" content="web, software, website" />
-        <meta name="robots" content="index, all, follow" />
-        <meta name="category" content="software" />
-        <meta name="language" content="English" />
-
-        <link rel="icon" href="/log.ico" type="image/x-icon" />
-      </Head>
+      <SEO />
 
       {isLoading ? (
         <Loader />

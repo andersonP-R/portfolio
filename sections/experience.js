@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { MainContainer } from "../styles/GlobalStyles";
 import { Wrapper } from "../styles/experienceStyles";
-import { FaLink } from "react-icons/fa";
+import { FaLink, FaArrowRight } from "react-icons/fa";
 import { useScroll } from "../hooks/useScroll";
 import { sectionsVariants } from "../utils/animationVariants";
 import { motion } from "framer-motion";
@@ -9,42 +9,40 @@ import { motion } from "framer-motion";
 const works = [
   {
     id: 1,
-    name: "Weather app",
-    decrip:
-      "Application made with React that checks the weather of a city in real time.",
-    picture: "weather.JPG",
-    technologies: "react - css-module - netlify -  weather api",
-    title: "weather",
-    url: "https://wheaterprojectapp.netlify.app/",
+    name: "Agroconcentrados-cipa",
+    decrip: "Company web site created with Next.js and styled-components",
+    technologies: "react - style-components - Next.js",
+    picture: "agroconcentrados-cap.jpg",
+    title: "agroconcentrados cipa",
+    url: "https://github.com/andersonP-R/agroconcentrados-cipa",
   },
   {
     id: 2,
-    name: "Blog",
-    decrip:
-      "Blog created with React. This is a custom text and it contains a lot of words ",
-    technologies: "react - style-components - netlify",
-    picture: "blog.JPG",
-    title: "blog",
-    url: "https://larivera.netlify.app",
+    name: "jira-aplication",
+    decrip: "Software to manage text notes (CRUD) in real time",
+    technologies: "react - MongoDB - Next.js - TypeScript - Axios",
+    picture: "openJira-cap.jpg",
+    title: "Jira application",
+    url: "https://github.com/andersonP-R/jira-project",
   },
   {
     id: 3,
-    name: "work2",
-    decrip: "this is a short descripcion about this work ",
-    technologies: "react style-components heroku",
-    picture: "dolly.jpg",
-    title: "Work 3",
-    url: "https://google.com",
+    name: "Weather-app",
+    decrip:
+      "Application made with React that checks the weather of a city in real time",
+    picture: "weather.JPG",
+    technologies: "react - css-module - netlify -  weather api",
+    title: "weather application",
+    url: "https://wheaterprojectapp.netlify.app/",
   },
   {
     id: 4,
-    name: "work2",
-    decrip: "this is a short descripcion about this work ",
-    technologies: "react style-components heroku",
-
-    picture: "dolly.jpg",
-    title: "Work 3",
-    url: "https://google.com",
+    name: "",
+    decrip: "Check out my github profile for more projects",
+    technologies: "",
+    picture: "github-cap.png",
+    title: "See more",
+    url: "https://github.com/andersonP-R",
   },
 ];
 
@@ -95,6 +93,10 @@ export const Experience = () => {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="swipe">
+            <p>Swipe</p>
+            <FaArrowRight />
           </div>
         </motion.div>
       </Wrapper>

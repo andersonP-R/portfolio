@@ -24,6 +24,31 @@ export const Wrapper = styled.div`
     padding-top: 50px;
   }
 
+  .swipe {
+    display: none;
+    width: 100%;
+    height: 30px;
+    margin-top: 35px;
+
+    p {
+      font-size: 20px;
+      color: #fff;
+    }
+
+    svg {
+      color: #fff;
+      font-size: 1.3rem;
+      margin-top: 0.2rem;
+    }
+
+    @media screen and (max-width: 810px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
   .title-container {
     display: flex;
     align-items: center;
