@@ -28,7 +28,7 @@ export const Wrapper = styled.div`
     display: none;
     width: 100%;
     height: 30px;
-    margin-top: 35px;
+    margin-top: 18px;
 
     p {
       font-size: 20px;
