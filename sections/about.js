@@ -32,7 +32,7 @@ export const About = () => {
               can use or need.
             </p>
             <p className="p-2">
-              I usually work with React, JavaScript and some Python but I'm
+              I usually work with react.js, javascript and some java but I'm
               always open to learn new things.
             </p>
 
