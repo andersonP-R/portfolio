@@ -13,8 +13,8 @@ const works = [
     decrip:
       "E-commerce web app created with Next.js, NextAuth.js, MongoDB and some more libraries",
     technologies:
-      "React.js - Next.js - MongoDB - TypeScript - Cloudinary - Paypal - Material-UI - NextAuth.js - Axios",
-    picture: "teslo-shop.png",
+      "Next.js - MongoDB - TypeScript - Cloudinary - Paypal - Material-UI - NextAuth.js",
+    picture: "teslo-shop.PNG",
     title: "teslo shop",
     url: "https://e-commerce-production-c673.up.railway.app",
   },
