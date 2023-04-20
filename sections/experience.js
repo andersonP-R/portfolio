@@ -9,18 +9,20 @@ import { motion } from "framer-motion";
 const works = [
   {
     id: 1,
-    name: "Agroconcentrados-cipa",
-    decrip: "Company web site created with Next.js and styled-components",
-    technologies: "react - style-components - Next.js",
-    picture: "agroconcentrados-cap.JPG",
-    title: "agroconcentrados cipa",
-    url: "https://github.com/andersonP-R/agroconcentrados-cipa",
+    name: "teslo-shop",
+    decrip:
+      "E-commerce web app created with Next.js, NextAuth.js, MongoDB and some more libraries",
+    technologies:
+      "React.js - Next.js - MongoDB - TypeScript - Cloudinary - Paypal - Material-UI - NextAuth.js - Axios",
+    picture: "teslo-shop.png",
+    title: "teslo shop",
+    url: "https://e-commerce-production-c673.up.railway.app",
   },
   {
     id: 2,
     name: "jira-aplication",
     decrip: "Software to manage text notes (CRUD) in real time",
-    technologies: "react - MongoDB - Next.js - TypeScript - Axios",
+    technologies: "React.js - MongoDB - Next.js - TypeScript - Axios",
     picture: "openJira-cap.JPG",
     title: "Jira application",
     url: "https://github.com/andersonP-R/jira-project",
@@ -31,7 +33,7 @@ const works = [
     decrip:
       "Application made with React that checks the weather of a city in real time",
     picture: "weather.JPG",
-    technologies: "react - css-module - netlify -  weather api",
+    technologies: "React.js - css-module - netlify -  weather api",
     title: "weather application",
     url: "https://wheaterprojectapp.netlify.app/",
   },
