@@ -94,7 +94,7 @@ export const Wrapper = styled.div`
         color: ${Colors["gray-color"]};
         width: 100%;
         font-size: 18px;
-        line-height: 24px;
+        line-height: 36px;
       }
       .p-2 {
         color: ${Colors["blue-color"]};

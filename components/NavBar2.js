@@ -80,14 +80,15 @@ export const NavBar2 = () => {
 
 const NavContainer = styled.nav`
   width: 100%;
-  height: 100px;
+  height: 80px;
   position: fixed;
   z-index: 999;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 22px;
-  background-color: ${Colors["black-color"]}66;
+  padding: 0px 20px;
+  /* background-color: ${Colors["black-color"]}dd; */
+  /* box-shadow: 0px 20px 10px ${Colors["black-color"]}; */
 
   .nav-logo {
     position: relative;

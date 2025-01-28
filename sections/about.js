@@ -27,13 +27,11 @@ export const About = () => {
             </div>
 
             <p className="p-1">
-              Hello! My name is Anderson Rivera and I build things for the web.
-              I am a self-taught person who likes to create things that others
-              can use or need.
-            </p>
-            <p className="p-2">
-              I usually work with react.js, javascript and some java but I'm
-              always open to learn new things.
+              I love to build things—turning ideas into impactful, functional
+              creations. From scalable systems and optimized algorithms to
+              intuitive user experiences, I thrive on solving problems and
+              continuously learning in a fast-evolving field.{" "}
+              <span className="p-2">Building is who I am.</span>
             </p>
 
             <div className="table-container">

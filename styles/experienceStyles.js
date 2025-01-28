@@ -174,7 +174,7 @@ export const Wrapper = styled.div`
       height: 500px;
       margin: 20px;
       border-radius: 16px;
-      border: 1px solid ${Colors["white-color"]};
+      border: 1px solid ${Colors["gray-color"]};
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
       overflow: hidden;
       transition: 0.3s ease-out;
@@ -260,17 +260,20 @@ export const Wrapper = styled.div`
       }
 
       &:hover {
+        border: 1px solid ${Colors["white-color"]};
+        box-shadow: 0 4px 6px ${Colors["blue-color"]};
+
         .work-card__img-container {
           opacity: 1;
         }
 
-        .work-card__url {
+        /* .work-card__url {
           color: ${Colors["blue-color"]};
         }
 
         .work-card__title {
           color: ${Colors["blue-color"]};
-        }
+        } */
       }
     }
   }

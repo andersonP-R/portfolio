@@ -32,7 +32,7 @@ export const Hero = () => {
               variants={heroVariants}
               transition={{ delay: 1, duration: 0.2, type: "tween" }}
             >
-              I'm a Front-end developer
+              I'm a software developer
             </motion.h1>
             <motion.p
               initial="hidden"
@@ -40,9 +40,10 @@ export const Hero = () => {
               variants={heroVariants}
               transition={{ delay: 1, duration: 0.2, type: "tween" }}
             >
-              Passionate about technology and specialized in front-end
-              development, I build solutions that help people achieve their
-              goals.
+              and software engineer dedicated to crafting innovative,
+              user-centered solutions. With a focus on clean design, seamless
+              functionality, and scalable systems, I bring ideas to life through
+              code and creativity.
             </motion.p>
             <motion.a
               href="#about"

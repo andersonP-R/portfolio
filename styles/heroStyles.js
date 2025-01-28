@@ -9,7 +9,7 @@ export const HeroWrapper = styled.div`
   margin: 0px auto;
   padding-top: 50px;
   margin-bottom: 120px;
-  overflow: hidden;
+  /* overflow: hidden; */
 
   @media screen and (max-width: 750px) {
     margin-bottom: 0px;
@@ -73,7 +73,6 @@ export const HeroWrapper = styled.div`
       h1 {
         color: ${Colors["gray-color"]};
         font-size: 40px;
-        margin-bottom: 15px;
 
         @media screen and (max-width: 960px) {
           font-size: 38px;
@@ -92,7 +91,7 @@ export const HeroWrapper = styled.div`
       p {
         color: ${Colors["gray-color"]};
         width: 65%;
-        line-height: 28px;
+        line-height: 34px;
         font-size: 20px;
         margin-bottom: 30px;
 
@@ -127,8 +126,9 @@ export const HeroWrapper = styled.div`
       position: absolute;
       width: auto;
       height: auto;
-      right: -50px;
-      top: -30px;
+      right: -180px;
+      top: 80px;
+      transform: rotate(160deg);
 
       @media screen and (max-width: 1250px) {
         opacity: 0.5;

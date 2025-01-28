@@ -79,7 +79,7 @@ export const ContactWrapper = styled.div`
 
       a {
         text-decoration: none;
-        border: 1px solid ${Colors["blue-color"]};
+        border: 1px solid ${Colors["gray-color"]};
         padding: 15px;
         font-size: 16px;
         color: ${Colors["white-color"]};
