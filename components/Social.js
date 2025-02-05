@@ -8,11 +8,16 @@ export const Social = () => {
   const [hiddenSocial, setHiddenSocial] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      window.pageYOffset > 4000
-        ? setHiddenSocial(true)
-        : setHiddenSocial(false);
-    });
+    window.onscroll = function (ev) {
+      if (
+        window.innerHeight + window.scrollY >=
+        document.body.offsetHeight - 30
+      ) {
+        setHiddenSocial(true);
+      } else {
+        setHiddenSocial(false);
+      }
+    };
   }, []);
 
   return (
