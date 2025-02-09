@@ -11,7 +11,7 @@ export const Social = () => {
     window.onscroll = function (ev) {
       if (
         window.innerHeight + window.scrollY >=
-        document.body.offsetHeight - 30
+        document.body.offsetHeight - 100
       ) {
         setHiddenSocial(true);
       } else {
