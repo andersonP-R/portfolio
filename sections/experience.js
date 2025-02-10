@@ -9,23 +9,22 @@ import { motion } from "framer-motion";
 const works = [
   {
     id: 1,
-    name: "teslo-shop",
+    name: "rainbow-project",
     decrip:
-      "E-commerce web app created with Next.js, NextAuth.js, MongoDB and some more libraries",
-    technologies:
-      "Next.js - MongoDB - TypeScript - Cloudinary - Paypal - Material-UI - NextAuth.js",
-    picture: "teslo-shop.PNG",
-    title: "teslo shop",
-    url: "https://e-commerce-production-c673.up.railway.app",
+      "E-commerce created with Next.js, NextAuth.js, PostgreSQL and some more libraries",
+    technologies: "Next.js - PostgreSQL - TypeScript - Cloudinary - Auth.js",
+    picture: "rainbow.png",
+    title: "Rainbow shop",
+    url: "https://rainbow-front.vercel.app/",
   },
   {
     id: 2,
-    name: "jira-aplication",
-    decrip: "Software to manage text notes (CRUD) in real time",
-    technologies: "React.js - MongoDB - Next.js - TypeScript - Axios",
-    picture: "openJira-cap.JPG",
-    title: "Jira application",
-    url: "https://github.com/andersonP-R/jira-project",
+    name: "app-test",
+    decrip: "Prototype build with web technologies",
+    technologies: "React.js - Next.js - TypeScript - HTML5 - CSS3 - JavaScript",
+    picture: "app.png",
+    title: "app prototype",
+    url: "https://calam.vercel.app/",
   },
   {
     id: 3,
@@ -60,12 +59,6 @@ export const Experience = () => {
           transition={{ delay: 0.3, duration: 0.4, type: "tween" }}
         >
           <div className="title-container">
-            <div className="t-1">some</div>
-            <div className="t-2">
-              of
-              <br />
-              my
-            </div>
             <div className="t-3"> projects</div>
           </div>
           <div className="works-container">

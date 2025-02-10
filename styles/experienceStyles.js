@@ -71,67 +71,10 @@ export const Wrapper = styled.div`
       height: auto;
     }
 
-    .t-1 {
-      display: flex;
-      align-items: center;
-      width: max-content;
-      height: 120px;
-      text-transform: uppercase;
-      color: ${Colors["white-color"]}f2;
-      font-size: 140px;
-      font-weight: bolder;
-      padding: 10px;
-      border: 1px solid ${Colors["red-color"]};
-
-      /* MEDIA QUERY */
-      @media screen and (max-width: 1290px) {
-        font-size: 120px;
-      }
-
-      @media screen and (max-width: 1115px) {
-        font-size: 80px;
-      }
-
-      @media screen and (max-width: 810px) {
-        font-size: 50px;
-        height: 80px;
-      }
-
-      @media screen and (max-width: 500px) {
-        padding: 5px;
-        font-size: 38px;
-        height: 40px;
-      }
-    }
-
-    .t-2 {
-      display: flex;
-      flex-direction: column;
-      text-transform: uppercase;
-      color: ${Colors["white-color"]}f2;
-      font-size: 48px;
-      font-weight: bolder;
-      padding: 8px 5px;
-
-      /* MEDIA QUERY */
-      @media screen and (max-width: 1290px) {
-        font-size: 28px;
-      }
-
-      @media screen and (max-width: 810px) {
-        font-size: 20px;
-      }
-
-      @media screen and (max-width: 500px) {
-        font-size: 16px;
-        line-height: 16px;
-      }
-    }
-
     .t-3 {
       text-transform: uppercase;
       color: ${Colors["white-color"]}f2;
-      font-size: 160px;
+      font-size: 100px;
       font-weight: bolder;
 
       /* MEDIA QUERY */
