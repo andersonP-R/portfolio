@@ -16,7 +16,7 @@ export const Hero = () => {
               variants={heroVariants}
               transition={{ delay: 0.9, duration: 0.2, type: "tween" }}
             >
-              Hi, my name is
+              Hola, mi nombre es
             </motion.h3>
             <motion.h2 //h2
               initial="hidden"
@@ -32,7 +32,7 @@ export const Hero = () => {
               variants={heroVariants}
               transition={{ delay: 1, duration: 0.2, type: "tween" }}
             >
-              I'm a software developer
+              Soy desarrollador de <span style={{ color: "" }}>software</span>
             </motion.h1>
             <motion.p
               initial="hidden"
@@ -40,10 +40,10 @@ export const Hero = () => {
               variants={heroVariants}
               transition={{ delay: 1, duration: 0.2, type: "tween" }}
             >
-              and software engineer dedicated to crafting innovative,
-              user-centered solutions. With a focus on clean design, seamless
-              functionality, and scalable systems, I bring ideas to life through
-              code and creativity.
+              dedicado a crear soluciones innovadoras centradas en el usuario.
+              Con un enfoque en el diseño limpio, la funcionalidad sin fisuras y
+              los sistemas escalables, doy vida a las ideas a través del{" "}
+              <span style={{ color: "#0061af" }}>código y la creatividad.</span>
             </motion.p>
             <motion.a
               href="#about"
@@ -52,7 +52,7 @@ export const Hero = () => {
               variants={heroVariants}
               transition={{ delay: 1, duration: 0.2, type: "tween" }}
             >
-              Let's start
+              Comencemos
             </motion.a>
           </div>
           <div className="animation">

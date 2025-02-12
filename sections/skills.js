@@ -98,7 +98,7 @@ export const Skills = () => {
           variants={sectionsVariants}
           transition={{ delay: 0.3, duration: 0.4, type: "tween" }}
         >
-          <h1 className="title">Skillset</h1>
+          <h1 className="title">Habilidades</h1>
           <div className="skill-box">
             {skills.map((skill) => (
               <div key={skill.id} className="skill-card">

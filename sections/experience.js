@@ -11,7 +11,7 @@ const works = [
     id: 1,
     name: "rainbow-project",
     decrip:
-      "E-commerce created with Next.js, NextAuth.js, PostgreSQL and some more libraries",
+      "E-commerce creado con with Next.js, NextAuth.js, PostgreSQL y otras librerías",
     technologies: "Next.js - PostgreSQL - TypeScript - Cloudinary - Auth.js",
     picture: "rainbow.png",
     title: "Rainbow shop",
@@ -20,7 +20,7 @@ const works = [
   {
     id: 2,
     name: "app-test",
-    decrip: "Prototype build with web technologies",
+    decrip: "Prototipo de aplicación móvil construido con herramientas web",
     technologies: "React.js - Next.js - TypeScript - HTML5 - CSS3 - JavaScript",
     picture: "app.png",
     title: "app prototype",
@@ -30,7 +30,7 @@ const works = [
     id: 3,
     name: "Weather-app",
     decrip:
-      "Application made with React that checks the weather of a city in real time",
+      "Aplicación hecha con React que comprueba el tiempo de una ciudad en tiempo real",
     picture: "weather.JPG",
     technologies: "React.js - css-module - netlify -  weather api",
     title: "weather application",
@@ -39,10 +39,10 @@ const works = [
   {
     id: 4,
     name: "",
-    decrip: "Check out my github profile for more projects",
+    decrip: "Echa un vistazo a mi perfil de github para ver más proyectos",
     technologies: "",
     picture: "github-cap.png",
-    title: "See more",
+    title: "¡Más proyectos!",
     url: "https://github.com/andersonP-R",
   },
 ];
@@ -59,7 +59,7 @@ export const Experience = () => {
           transition={{ delay: 0.3, duration: 0.4, type: "tween" }}
         >
           <div className="title-container">
-            <div className="t-3"> projects</div>
+            <div className="t-3"> Proyectos</div>
           </div>
           <div className="works-container">
             {works.map((work) => (
@@ -82,7 +82,7 @@ export const Experience = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Check it out
+                    Ver más
                     <FaLink />
                   </a>
                 </div>
@@ -90,7 +90,7 @@ export const Experience = () => {
             ))}
           </div>
           <div className="swipe">
-            <p>Swipe</p>
+            <p>Desliza</p>
             <FaArrowRight />
           </div>
         </motion.div>

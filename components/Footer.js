@@ -35,7 +35,7 @@ export const Footer = () => {
             <FaInstagram />
           </a>
         </div>
-        <h2>Designed and build by Anderson Rivera</h2>
+        <h2>Diseñado y construido por Anderson Rivera</h2>
         <a href="#hero" className="toTop">
           <FaChevronUp />
         </a>

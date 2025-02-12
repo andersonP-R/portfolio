@@ -21,17 +21,18 @@ export const Contact = () => {
             <Image src="/images/buzon-6.png" layout="fill" alt="buzon" />
           </div>
           <div className="form-container">
-            <h1 className="contact-title">Get in touch</h1>
+            <h1 className="contact-title">¡Envíame un mensaje!</h1>
             <p className="contact-decrip">
-              I may not respond to your email the same day, but I will certainly
-              reply with a "Hello" the next day.
+              Intento responder a todos los correos lo antes posible. Si no
+              obtiene respuesta el mismo día, seguro que la tendrá al siguiente.
+              ¡Estaré encantado de saludarle! 😊
             </p>
             <a
-              href="mailto:gamer1999r@gmail.com"
+              href="https://www.linkedin.com/in/andersonp-r/"
               target="_blank"
               rel="noreferrer"
             >
-              Say Hello!
+              Contáctame
             </a>
           </div>
           <div className="plane-container">

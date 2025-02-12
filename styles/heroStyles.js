@@ -32,12 +32,14 @@ export const HeroWrapper = styled.div`
 
       @media screen and (max-width: 750px) {
         background-color: ${Colors["black-color"]}cc;
+        width: 100%;
+        gap: 10px;
       }
 
       h3 {
         color: ${Colors["blue-color"]};
         font-size: 20px;
-        font-weight: lighter;
+        font-weight: 700;
         letter-spacing: 1px;
         padding-top: 15px;
 
@@ -97,7 +99,7 @@ export const HeroWrapper = styled.div`
 
         @media screen and (max-width: 500px) {
           font-size: 16px;
-          line-height: 22px;
+          line-height: 28px;
           width: 90%;
         }
       }
@@ -106,7 +108,7 @@ export const HeroWrapper = styled.div`
         display: block;
         width: max-content;
         text-decoration: none;
-        border: 2px solid ${Colors["blue-color"]};
+        border: 2px solid ${Colors["gray-color"]};
         color: ${Colors["white-color"]};
         font-size: 16px;
         padding: 17px;
@@ -127,11 +129,11 @@ export const HeroWrapper = styled.div`
       width: auto;
       height: auto;
       right: -180px;
-      top: 80px;
+      top: 110px;
       transform: rotate(160deg);
 
       @media screen and (max-width: 1250px) {
-        opacity: 0.5;
+        opacity: 0.2;
         top: 60px;
         right: -200px;
       }

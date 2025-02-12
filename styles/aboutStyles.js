@@ -68,7 +68,7 @@ export const Wrapper = styled.div`
           font-weight: bolder;
           text-transform: uppercase;
           color: ${Colors["white-color"]}f2;
-          font-size: 130px;
+          font-size: 100px;
 
           @media screen and (max-width: 1000px) {
             font-size: 100px;

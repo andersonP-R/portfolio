@@ -20,7 +20,7 @@ export const SkillsWrapper = styled.div`
   .title {
     margin-top: 90px;
     position: absolute;
-    width: 365px;
+    width: 150px;
     height: 140px;
     border: 1px solid ${Colors["red-color"]};
     color: ${Colors["white-color"]}f2;
@@ -37,7 +37,7 @@ export const SkillsWrapper = styled.div`
 
     @media screen and (max-width: 580px) {
       width: 210px;
-      font-size: 55px;
+      font-size: 42px;
       padding-left: 10px;
     }
   }

@@ -22,16 +22,16 @@ export const About = () => {
 
           <div className="description">
             <div className="title-container">
-              <div className="t-1">About</div>
-              <div className="t-2">Me</div>
+              <div className="t-1">Sobre</div>
+              <div className="t-2">mí</div>
             </div>
 
             <p className="p-1">
-              I love to build things—turning ideas into impactful, functional
-              creations. From scalable systems and optimized algorithms to
-              intuitive user experiences, I thrive on solving problems and
-              continuously learning in a fast-evolving field.{" "}
-              <span className="p-2">Building is who I am.</span>
+              Me encanta construir cosas, convertir ideas en creaciones
+              impactantes y funcionales. Desde sistemas escalables y algoritmos
+              optimizados hasta experiencias de usuario intuitivas, me encanta
+              resolver problemas y aprender continuamente en un campo en rápida
+              evolución. <span className="p-2">Disfruto mucho programar.</span>
             </p>
 
             <div className="table-container">

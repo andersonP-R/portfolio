@@ -48,27 +48,27 @@ export const NavBar2 = () => {
       <ul className={`nav-items ${open ? "active" : ""}`}>
         <li className="item">
           <a onClick={handleOpen} href="#hero">
-            Home
+            Inicio
           </a>
         </li>
         <li className="item">
           <a onClick={handleOpen} href="#about">
-            About
+            Sobre mí
           </a>
         </li>
         <li className="item">
           <a onClick={handleOpen} href="#experience">
-            Experience
+            Proyectos
           </a>
         </li>
         <li className="item">
           <a onClick={handleOpen} href="#skills">
-            Skills
+            Habilidades
           </a>
         </li>
         <li className="item">
           <a onClick={handleOpen} href="#contact">
-            Contact
+            Contacto
           </a>
         </li>
         <NavBgAnimation state={open} />

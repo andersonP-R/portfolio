@@ -16,13 +16,11 @@ export const ContactWrapper = styled.div`
     justify-content: center;
     padding-top: 80px;
 
-    border: 1px solid ${Colors["white-color"]};
-
     .buzon-container {
       position: absolute;
       width: 500px;
       height: 550px;
-      left: 0px;
+      left: -50px;
 
       /* MEDIA QUERY */
       @media screen and (max-width: 1050px) {
@@ -59,8 +57,7 @@ export const ContactWrapper = styled.div`
 
       .contact-title {
         color: ${Colors["white-color"]}f2;
-        text-transform: capitalize;
-        font-size: 50px;
+        font-size: 40px;
         text-align: center;
 
         /* MEDIA QUERY */
@@ -73,7 +70,7 @@ export const ContactWrapper = styled.div`
         width: 70%;
         text-align: center;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 32px;
         color: ${Colors["gray-color"]};
       }
 
@@ -100,8 +97,8 @@ export const ContactWrapper = styled.div`
       position: absolute;
       width: 410px;
       height: 430px;
-      right: 0px;
-      margin-top: 50px;
+      right: -50px;
+      margin-top: 150px;
 
       /* MEDIA QUERY */
       @media screen and (max-width: 1050px) {
