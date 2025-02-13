@@ -40,9 +40,9 @@ export const Hero = () => {
               variants={heroVariants}
               transition={{ delay: 1, duration: 0.2, type: "tween" }}
             >
-              dedicado a crear soluciones innovadoras centradas en el usuario.
-              Con un enfoque en el diseño limpio, la funcionalidad sin fisuras y
-              los sistemas escalables, doy vida a las ideas a través del{" "}
+              dedicado a crear soluciones innovadoras centradas en el usuario
+              con un enfoque en el diseño limpio y la funcionalidad sin fisuras,
+              doy vida a las ideas a través del{" "}
               <span style={{ color: "#0061af" }}>código y la creatividad.</span>
             </motion.p>
             <motion.a
