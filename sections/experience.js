@@ -11,7 +11,7 @@ const works = [
     id: 1,
     name: "rainbow-project",
     decrip:
-      "E-commerce creado con with Next.js, NextAuth.js, PostgreSQL y otras librerías",
+      "E-commerce creado con Next.js, NextAuth.js, PostgreSQL y otras librerías",
     technologies: "Next.js - PostgreSQL - TypeScript - Cloudinary - Auth.js",
     picture: "rainbow.png",
     title: "Rainbow shop",
